@@ -1011,7 +1011,6 @@ header #navArea #navMobile .borderBox #dropDown {
     #content {
         width: 100%;
         padding: 25% 0;
-        height: 3000px;
         background: url(Background.svg)
     }
 }
@@ -1154,24 +1153,37 @@ header #navArea #navMobile .borderBox #dropDown {
         margin: 10% 0 0;
     }
 
-    #portrait {
+    #mobilePortrait #portraitBorder {
         display: block;
         position: relative;
         width: 70%;
         padding: 40% 0 0 0;
         height: 0;
-        background: #ffffff;
+        background: #5c4109;
         top: 30%;
         left: 15%;
         border-radius: 10%/17%;
     }
 
-    #mobilePortrait p {
+    #mobilePortrait #portraitBorder #portrait {
+        display: block;
         position: absolute;
-        top: -10%;
+        width: 96%;
+        height: 92%;
+        top: 0%;
+        margin: 2% 2%;
+        background: #ffffff;
+        border-radius: 10%/17%;
+    }
+
+    #mobilePortrait #portraitBorder #portrait p {
+        position: absolute;
+        top: -8%;
+        width: 100%;
         font-family: 'Londrina Solid', cursive;
         text-align: center;
-        font-size: 7vw;
+        color: #18701f;
+        font-size: 6.5vw;
         line-height: 150%;
     }
 }
