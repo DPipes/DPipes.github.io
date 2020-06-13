@@ -937,12 +937,9 @@ header #navArea #navMobile .borderBox #dropDown {
     header #navArea #navMobile .borderBox {
         position: relative;
         display: inline-block;
-        padding: .8%;
-        margin: 0 .75%;
+        top: 5%;
         width: 100%;
         height: 90%;
-        background: #000000;
-        border-radius: 20%/35%;
     }
 
     header #navArea #navMobile .borderBox #burgerButton {
@@ -968,7 +965,7 @@ header #navArea #navMobile .borderBox #dropDown {
         position: absolute;
         text-align: center;
         width: 100%;
-        top: -28.5%;
+        top: -31%;
         margin: 0;
         text-transform: uppercase;
         font-family: sans-serif;
@@ -979,7 +976,7 @@ header #navArea #navMobile .borderBox #dropDown {
     header #navArea #navMobile .borderBox #dropDown {
         position: absolute;
         width: 494.5%;
-        height: 225%;
+        height: 275%;
         top: 50%;
         left: -200%;
         background: rgba(0, 0, 0, 0.8);
@@ -1000,6 +997,7 @@ header #navArea #navMobile .borderBox #dropDown {
     header #navArea #navMobile .borderBox #dropDown ul li a {
         text-decoration: none;
         font-family: 'Londrina Solid', cursive;
+        font-size: 4vw;
         color: #ffffff;
     }
 
