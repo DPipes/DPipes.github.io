@@ -113,7 +113,35 @@ header #navArea #navMobile .borderBox #dropDown {
 
 #content {
     width: 100%;
-    background: url(Background.svg)
+    background: url(Background.svg);
+    padding: 0 0 1%;
+}
+
+#contentWrapper {
+    width: 92%;
+    margin: 5% auto 1%;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 100px;
+}
+
+#contentWrapper .head h1 {
+    font-family: 'Londrina Solid', cursive;
+    font-weight: 300;
+    font-size: 7vw;
+    color: #18701f;
+    text-align: center;
+    padding: 3% 0 0;
+    margin: 0;
+}
+
+article {
+    font-family: 'Londrina Solid', cursive;
+    font-weight: 300;
+    font-size: 3vw;
+    color: #18701f;
+    text-align: center;
+    line-height: 120%;
+    padding: 0 3% 5%;
 }
 
 #mobilePortrait {
