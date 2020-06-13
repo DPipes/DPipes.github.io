@@ -107,6 +107,10 @@ header #navArea #navMobile {
     display: none;
 }
 
+header #navArea #navMobile .borderBox #dropDown {
+    display :none;
+}
+
 #content {
     width: 100%;
     height: 3000px;
@@ -877,7 +881,26 @@ header #navArea #navMobile {
     }
 }
 
-@media all and (min-width:769px) and (max-width: 800px) {
+@media all /*and (min-width:769px) */and (max-width: 800px) {
+
+
+    #pageBorder {
+        padding: 0;
+        margin: 0;
+        background: none;
+    }
+
+    #page {
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+        position: relative;
+        width: 100%;
+        padding: 0;
+        z-index: 500;
+    }
 
     header #headerImage {
         background-image: url("Header_Narrow.jpg");
@@ -891,7 +914,7 @@ header #navArea #navMobile {
     header #navArea {
         position: absolute;
         width: 100%;
-        padding: 8% 0 0 0;
+        padding: 12% 0 0 0;
         top: 90%;
         background: linear-gradient(to bottom, #27ab48 0%, #27ab48 47%, #000000 47%, #000000 53%, #45caf5 53%, #45caf5 100%);
     }
@@ -911,11 +934,7 @@ header #navArea #navMobile {
         margin: 0 auto;
     }
 
-    header #navArea #navMobile a {
-        text-decoration: none;
-    }
-
-    header #navArea #navMobile a .borderBox {
+    header #navArea #navMobile .borderBox {
         position: relative;
         display: inline-block;
         padding: .8%;
@@ -923,9 +942,10 @@ header #navArea #navMobile {
         width: 100%;
         height: 90%;
         background: #000000;
+        border-radius: 20%/35%;
     }
 
-    header #navArea #navMobile a .borderBox #burgerButton {
+    header #navArea #navMobile .borderBox #burgerButton {
         position: relative;
         display: block;
         height: 100%;
@@ -936,26 +956,66 @@ header #navArea #navMobile {
         -o-transition: background .1s ease-in;
         -webkit-transition: background .1s ease-in;
         transition: background .1s ease-in;
+        border-radius: 20%/35%;
     }
 
-    header #navArea #navMobile a:hover .borderBox #burgerButton {
+    header #navArea #navMobile .borderBox:hover #burgerButton {
         background: #ffc70b;
+        z-index: 700;
     }
 
-    header #navArea #navMobile a .borderBox #burgerButton p {
+    header #navArea #navMobile .borderBox #burgerButton p {
         position: absolute;
         text-align: center;
         width: 100%;
-        top: 7%;
+        top: -28.5%;
         margin: 0;
         text-transform: uppercase;
-        font-family: 'Londrina Solid', cursive;
-        font-size: 2.65vw;
+        font-family: sans-serif;
+        font-size: 15vw;
         color: #000000;
+    }
+
+    header #navArea #navMobile .borderBox #dropDown {
+        position: absolute;
+        width: 494.5%;
+        height: 225%;
+        top: 50%;
+        left: -200%;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 690;
+    }
+
+    header #navArea #navMobile .borderBox #dropDown ul {
+        list-style: none;
+        height: 100%;
+        margin: 2% 0 0;
+    }
+
+    header #navArea #navMobile .borderBox #dropDown ul li {
+        height: 22%;
+        margin: 0;
+    }
+
+    header #navArea #navMobile .borderBox #dropDown ul li a {
+        text-decoration: none;
+        font-family: 'Londrina Solid', cursive;
+        color: #ffffff;
+    }
+
+    header #navArea #navMobile .borderBox:hover #dropDown {
+        display: block;
+    }
+
+    #content {
+        width: 100%;
+        padding: 5% 0;
+        height: 3000px;
+        background: url(Background.svg)
     }
 }
 
-@media all and (min-width:569px) and (max-width: 768px) {
+/*@media all and (min-width:569px) and (max-width: 768px) {
 
     header #headerImage {
         background-image: url("Header_Narrow.jpg");
@@ -1265,4 +1325,4 @@ header #navArea #navMobile {
         font-size: 2.65vw;
         color: #000000;
     }
-}
+}*/
