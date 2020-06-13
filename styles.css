@@ -45,11 +45,12 @@ header #headerImage {
     padding: 28.8% 0 0 0;
 }
 
-header #navArea{
+header #navArea {
     position: absolute;
     width: 100%;
     padding: 4.5% 0 0 0;
     top: 90%;
+    background: linear-gradient(to bottom, #27ab48 0%, #27ab48 47%, #000000 47%, #000000 53%, #45caf5 53%, #45caf5 100%);
 }
 
 header #navArea nav {
@@ -57,7 +58,6 @@ header #navArea nav {
     width: 100%;
     height: 100%;
     top: 0;
-    background: linear-gradient(to bottom,  #27ab48 0%, #27ab48 47%, #000000 47%, #000000 53%, #45caf5 53%, #45caf5 100%);
 }
 
 header #navArea nav a {
@@ -101,6 +101,10 @@ header #navArea nav a .borderBox .navLink p {
     font-family: 'Londrina Solid', cursive;
     font-size: 2.65vw;
     color: #000000;
+}
+
+header #navArea #navMobile {
+    display: none;
 }
 
 #content {
@@ -857,7 +861,7 @@ header #navArea nav a .borderBox .navLink p {
         background-size: contain;
         position: relative;
         width: 100%;
-        padding: 31.3% 0 0 0;
+        padding: 34.5% 0 0 0;
     }
 }
 
@@ -869,7 +873,7 @@ header #navArea nav a .borderBox .navLink p {
         background-size: contain;
         position: relative;
         width: 100%;
-        padding: 31.3% 0 0 0;
+        padding: 34.5% 0 0 0;
     }
 }
 
@@ -881,7 +885,73 @@ header #navArea nav a .borderBox .navLink p {
         background-size: contain;
         position: relative;
         width: 100%;
-        padding: 38.1% 0 0 0;
+        padding: 42% 0 0 0;
+    }
+
+    header #navArea {
+        position: absolute;
+        width: 100%;
+        padding: 8% 0 0 0;
+        top: 90%;
+        background: linear-gradient(to bottom, #27ab48 0%, #27ab48 47%, #000000 47%, #000000 53%, #45caf5 53%, #45caf5 100%);
+    }
+
+    header #navArea nav {
+        display: none;
+    }
+
+    header #navArea #navMobile {
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        height: 100%;
+        width: 20%;
+        margin: 0 auto;
+    }
+
+    header #navArea #navMobile a {
+        text-decoration: none;
+    }
+
+    header #navArea #navMobile a .borderBox {
+        position: relative;
+        display: inline-block;
+        padding: .8%;
+        margin: 0 .75%;
+        width: 100%;
+        height: 90%;
+        background: #000000;
+    }
+
+    header #navArea #navMobile a .borderBox #burgerButton {
+        position: relative;
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: #ffffff;
+        fill: #ec1262;
+        -moz-transition: background .1s ease-in;
+        -o-transition: background .1s ease-in;
+        -webkit-transition: background .1s ease-in;
+        transition: background .1s ease-in;
+    }
+
+    header #navArea #navMobile a:hover .borderBox #burgerButton {
+        background: #ffc70b;
+    }
+
+    header #navArea #navMobile a .borderBox #burgerButton p {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        top: 7%;
+        margin: 0;
+        text-transform: uppercase;
+        font-family: 'Londrina Solid', cursive;
+        font-size: 2.65vw;
+        color: #000000;
     }
 }
 
@@ -893,7 +963,73 @@ header #navArea nav a .borderBox .navLink p {
         background-size: contain;
         position: relative;
         width: 100%;
-        padding: 38.1% 0 0 0;
+        padding: 42% 0 0 0;
+    }
+
+    header #navArea {
+        position: absolute;
+        width: 100%;
+        padding: 8% 0 0 0;
+        top: 90%;
+        background: linear-gradient(to bottom, #27ab48 0%, #27ab48 47%, #000000 47%, #000000 53%, #45caf5 53%, #45caf5 100%);
+    }
+
+    header #navArea nav {
+        display: none;
+    }
+
+    header #navArea #navMobile {
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        height: 100%;
+        width: 20%;
+        margin: 0 auto;
+    }
+
+    header #navArea #navMobile a {
+        text-decoration: none;
+    }
+
+    header #navArea #navMobile a .borderBox {
+        position: relative;
+        display: inline-block;
+        padding: .8%;
+        margin: 0 .75%;
+        width: 100%;
+        height: 90%;
+        background: #000000;
+    }
+
+    header #navArea #navMobile a .borderBox #burgerButton {
+        position: relative;
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: #ffffff;
+        fill: #ec1262;
+        -moz-transition: background .1s ease-in;
+        -o-transition: background .1s ease-in;
+        -webkit-transition: background .1s ease-in;
+        transition: background .1s ease-in;
+    }
+
+    header #navArea #navMobile a:hover .borderBox #burgerButton {
+        background: #ffc70b;
+    }
+
+    header #navArea #navMobile a .borderBox #burgerButton p {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        top: 7%;
+        margin: 0;
+        text-transform: uppercase;
+        font-family: 'Londrina Solid', cursive;
+        font-size: 2.65vw;
+        color: #000000;
     }
 }
 
@@ -905,7 +1041,73 @@ header #navArea nav a .borderBox .navLink p {
         background-size: contain;
         position: relative;
         width: 100%;
-        padding: 38.1% 0 0 0;
+        padding: 42% 0 0 0;
+    }
+
+    header #navArea {
+        position: absolute;
+        width: 100%;
+        padding: 8% 0 0 0;
+        top: 90%;
+        background: linear-gradient(to bottom, #27ab48 0%, #27ab48 47%, #000000 47%, #000000 53%, #45caf5 53%, #45caf5 100%);
+    }
+
+    header #navArea nav {
+        display: none;
+    }
+
+    header #navArea #navMobile {
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        height: 100%;
+        width: 20%;
+        margin: 0 auto;
+    }
+
+    header #navArea #navMobile a {
+        text-decoration: none;
+    }
+
+    header #navArea #navMobile a .borderBox {
+        position: relative;
+        display: inline-block;
+        padding: .8%;
+        margin: 0 .75%;
+        width: 100%;
+        height: 90%;
+        background: #000000;
+    }
+
+    header #navArea #navMobile a .borderBox #burgerButton {
+        position: relative;
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: #ffffff;
+        fill: #ec1262;
+        -moz-transition: background .1s ease-in;
+        -o-transition: background .1s ease-in;
+        -webkit-transition: background .1s ease-in;
+        transition: background .1s ease-in;
+    }
+
+    header #navArea #navMobile a:hover .borderBox #burgerButton {
+        background: #ffc70b;
+    }
+
+    header #navArea #navMobile a .borderBox #burgerButton p {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        top: 7%;
+        margin: 0;
+        text-transform: uppercase;
+        font-family: 'Londrina Solid', cursive;
+        font-size: 2.65vw;
+        color: #000000;
     }
 }
 
@@ -917,7 +1119,73 @@ header #navArea nav a .borderBox .navLink p {
         background-size: contain;
         position: relative;
         width: 100%;
-        padding: 38.1% 0 0 0;
+        padding: 42% 0 0 0;
+    }
+
+    header #navArea {
+        position: absolute;
+        width: 100%;
+        padding: 8% 0 0 0;
+        top: 90%;
+        background: linear-gradient(to bottom, #27ab48 0%, #27ab48 47%, #000000 47%, #000000 53%, #45caf5 53%, #45caf5 100%);
+    }
+
+    header #navArea nav {
+        display: none;
+    }
+
+    header #navArea #navMobile {
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        height: 100%;
+        width: 20%;
+        margin: 0 auto;
+    }
+
+    header #navArea #navMobile a {
+        text-decoration: none;
+    }
+
+    header #navArea #navMobile a .borderBox {
+        position: relative;
+        display: inline-block;
+        padding: .8%;
+        margin: 0 .75%;
+        width: 100%;
+        height: 90%;
+        background: #000000;
+    }
+
+    header #navArea #navMobile a .borderBox #burgerButton {
+        position: relative;
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: #ffffff;
+        fill: #ec1262;
+        -moz-transition: background .1s ease-in;
+        -o-transition: background .1s ease-in;
+        -webkit-transition: background .1s ease-in;
+        transition: background .1s ease-in;
+    }
+
+    header #navArea #navMobile a:hover .borderBox #burgerButton {
+        background: #ffc70b;
+    }
+
+    header #navArea #navMobile a .borderBox #burgerButton p {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        top: 7%;
+        margin: 0;
+        text-transform: uppercase;
+        font-family: 'Londrina Solid', cursive;
+        font-size: 2.65vw;
+        color: #000000;
     }
 }
 
@@ -929,6 +1197,72 @@ header #navArea nav a .borderBox .navLink p {
         background-size: contain;
         position: relative;
         width: 100%;
-        padding: 38.1% 0 0 0;
+        padding: 42% 0 0 0;
+    }
+
+    header #navArea {
+        position: absolute;
+        width: 100%;
+        padding: 8% 0 0 0;
+        top: 90%;
+        background: linear-gradient(to bottom, #27ab48 0%, #27ab48 47%, #000000 47%, #000000 53%, #45caf5 53%, #45caf5 100%);
+    }
+
+    header #navArea nav {
+        display: none;
+    }
+
+    header #navArea #navMobile {
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        height: 100%;
+        width: 20%;
+        margin: 0 auto;
+    }
+
+    header #navArea #navMobile a {
+        text-decoration: none;
+    }
+
+    header #navArea #navMobile a .borderBox {
+        position: relative;
+        display: inline-block;
+        padding: .8%;
+        margin: 0 .75%;
+        width: 100%;
+        height: 90%;
+        background: #000000;
+    }
+
+    header #navArea #navMobile a .borderBox #burgerButton {
+        position: relative;
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: #ffffff;
+        fill: #ec1262;
+        -moz-transition: background .1s ease-in;
+        -o-transition: background .1s ease-in;
+        -webkit-transition: background .1s ease-in;
+        transition: background .1s ease-in;
+    }
+
+    header #navArea #navMobile a:hover .borderBox #burgerButton {
+        background: #ffc70b;
+    }
+
+    header #navArea #navMobile a .borderBox #burgerButton p {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        top: 7%;
+        margin: 0;
+        text-transform: uppercase;
+        font-family: 'Londrina Solid', cursive;
+        font-size: 2.65vw;
+        color: #000000;
     }
 }
