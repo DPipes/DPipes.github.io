@@ -912,7 +912,7 @@ article {
     }
 }
 
-@media all and (min-width:769px) and (max-width: 800px) {
+@media all and (min-width:650px) and (max-width: 800px) {
 
 
     #pageBorder {
@@ -1043,7 +1043,7 @@ article {
     }
 }
 
-@media all /*and (min-width:569px) */and (max-width: 768px) and (orientation:portrait) {
+@media all /*and (min-width:569px) */and (max-width: 649px) and (orientation:portrait) {
 
 
     #pageBorder {
