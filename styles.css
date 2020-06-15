@@ -37,7 +37,7 @@ header {
 }
 
 header #headerImage {
-    background-image: url("Header.jpg");
+    background-image: url("Images/Header.jpg");
     background-repeat: no-repeat;
     background-size: contain;
     position: relative;
@@ -113,13 +113,13 @@ header #navArea #navMobile .borderBox #dropDown {
 
 #content {
     width: 100%;
-    background: url(Background.svg);
+    background: url(Images/Background.svg);
     padding: 0 0 1%;
 }
 
 #contentWrapper {
     width: 92%;
-    margin: 5% auto 1%;
+    margin: 7% auto 5%;
     background: rgba(255, 255, 255, 0.9);
     border-radius: 100px;
 }
@@ -142,6 +142,41 @@ article {
     text-align: center;
     line-height: 120%;
     padding: 0 3% 5%;
+}
+
+footer {
+    width: 100%;
+    background: #27ab48;
+}
+
+footer #social {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    width: 50%;
+    padding: 0 3%;
+}
+
+footer #social .socialLink {
+    display: inline-block;
+    width: 8%;
+    margin: 1.25% .4%;
+    padding: 0;
+}
+
+footer #social .socialLink img {
+    position: relative;
+    width: 90%;
+    margin: 8% 5% 2%;
+}
+
+footer #contact {
+    display: inline-block;
+    float: right;
+    margin: 1% 3% 0;
+    font-family: 'Londrina Solid', cursive;
+    font-size: 2.5vw;
+    color: #ffffff;
 }
 
 #mobilePortrait {
@@ -891,24 +926,80 @@ article {
 @media all and (min-width:960px) and (max-width: 1024px) {
 
     header #headerImage {
-        background-image: url("Header_Mid.jpg");
+        background-image: url("Images/Header_Mid.jpg");
         background-repeat: no-repeat;
         background-size: contain;
         position: relative;
         width: 100%;
         padding: 34.5% 0 0 0;
     }
+
+    #contentWrapper {
+        border-radius: 70px;
+    }
+
+    footer #social {
+        margin: 0;
+        width: 50%;
+        padding: 0 3%;
+    }
+
+    footer #social .socialLink {
+        width: 10%;
+        margin: 1.75% .4%;
+    }
+
+    footer #social .socialLink img {
+        width: 90%;
+    }
+
+    footer #contact {
+        margin: 1.5% 3% 0;
+        font-size: 3.25vw;
+    }
 }
 
 @media all and (min-width:801px) and (max-width: 959px) {
 
     header #headerImage {
-        background-image: url("Header_Mid.jpg");
+        background-image: url("Images/Header_Mid.jpg");
         background-repeat: no-repeat;
         background-size: contain;
         position: relative;
         width: 100%;
         padding: 34.5% 0 0 0;
+    }
+
+    #contentWrapper {
+        border-radius: 60px;
+    }
+
+    #contentWrapper .head h1 {
+        font-size: 8vw;
+    }
+
+    article {
+        font-size: 3.5vw;
+    }
+
+    footer #social {
+        margin: 0;
+        width: 50%;
+        padding: .5% 4%;
+    }
+
+    footer #social .socialLink {
+        width: 12%;
+        margin: 1.75% .4%;
+    }
+
+    footer #social .socialLink img {
+        width: 90%;
+    }
+
+    footer #contact {
+        margin: 2.4% 4% 0;
+        font-size: 3.25vw;
     }
 }
 
@@ -934,7 +1025,7 @@ article {
     }
 
     header #headerImage {
-        background-image: url("Header_Narrow.jpg");
+        background-image: url("Images/Header_Narrow.jpg");
         background-repeat: no-repeat;
         background-size: contain;
         position: relative;
@@ -1014,148 +1105,11 @@ article {
         height: 275%;
         top: 50%;
         left: -200%;
-        background: #000000;
-        opacity: 0.8;
+        background: rgba(0, 0, 0, 0.8);
         z-index: 690;
     }
 
-    header #navArea #navMobile .borderBox #dropDown ul {
-        list-style: none;
-        height: 100%;
-        margin: 2% 0 0;
-    }
-
-    header #navArea #navMobile .borderBox #dropDown ul li {
-        height: 22%;
-        margin: 0;
-    }
-
-    header #navArea #navMobile .borderBox #dropDown ul li a {
-        text-decoration: none;
-        font-family: 'Londrina Solid', cursive;
-        font-size: 4vw;
-        color: #ffffff;
-    }
-
-    header #navArea #navMobile .borderBox #btnControl:checked ~ #dropDown {
-        display: block;
-    }
-
-    #content {
-        width: 100%;
-        padding: 25% 0;
-        background: url(Background.svg)
-    }
-}
-
-@media all /*and (min-width:569px) */and (max-width: 649px) and (orientation:portrait) {
-
-
-    #pageBorder {
-        padding: 0;
-        margin: 0;
-        background: none;
-    }
-
-    #page {
-        padding: 0;
-        margin: 0;
-    }
-
-    header {
-        position: relative;
-        width: 100%;
-        padding: 0;
-        z-index: 500;
-    }
-
-    header #headerImage {
-        background-image: url("Header_Narrow.jpg");
-        background-repeat: no-repeat;
-        background-size: contain;
-        position: relative;
-        width: 100%;
-        padding: 42% 0 0 0;
-    }
-
-    header #navArea {
-        position: absolute;
-        width: 100%;
-        padding: 12% 0 0 0;
-        top: 90%;
-        background: linear-gradient(to bottom, #27ab48 0%, #27ab48 47%, #000000 47%, #000000 53%, #45caf5 53%, #45caf5 100%);
-    }
-
-    header #navArea nav {
-        display: none;
-    }
-
-    header #navArea #navMobile {
-        display: block;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        height: 100%;
-        width: 20%;
-        margin: 0 auto;
-    }
-
-    header #navArea #navMobile .borderBox {
-        position: relative;
-        display: inline-block;
-        top: 5%;
-        width: 100%;
-        height: 90%;
-    }
-
-    header #navArea #navMobile .borderBox #btnControl {
-        display: none;
-    }
-
-    header #navArea #navMobile .borderBox #burgerButton {
-        position: relative;
-        display: block;
-        height: 100%;
-        width: 100%;
-        background: #ffffff;
-        fill: #ec1262;
-        -moz-transition: background .1s ease-in;
-        -o-transition: background .1s ease-in;
-        -webkit-transition: background .1s ease-in;
-        transition: background .1s ease-in;
-        border-radius: 20%/35%;
-    }
-
-    header #navArea #navMobile .borderBox #btnControl:checked + #burgerButton {
-        background: #ffc70b;
-        z-index: 700;
-    }
-
-    header #navArea #navMobile .borderBox #burgerButton p {
-        position: absolute;
-        text-align: center;
-        width: 100%;
-        top: -31%;
-        margin: 0;
-        text-transform: uppercase;
-        font-family: sans-serif;
-        font-size: 15vw;
-        color: #000000;
-    }
-
-    header #navArea #navMobile .borderBox #dropDown {
-        position: absolute;
-        width: 500%;
-        height: 275%;
-        top: 50%;
-        left: -200%;
-        background: #000000;
-        opacity: 0.8;
-        z-index: 690;
-    }
-
-    header #navArea #navMobile .borderBox #dropDown svg{
+    header #navArea #navMobile .borderBox #dropDown svg {
         position: relative;
         top: 7%;
         right: 2%;
@@ -1187,12 +1141,43 @@ article {
     }
 
     #content {
-        padding: 25% 0;
+        padding: 5% 0;
     }
 
-    svg {
-        position: absolute;
+    #contentWrapper {
+        border-radius: 50px;
     }
+
+    #contentWrapper .head h1 {
+        font-size: 10vw;
+    }
+
+    article {
+        font-size: 4.25vw;
+    }
+
+    footer #social {
+        margin: 0;
+        width: 50%;
+        padding: .5% 4%;
+    }
+
+    footer #social .socialLink {
+        width: 12%;
+        margin: 1.75% 1%;
+    }
+
+    footer #social .socialLink img {
+        width: 90%;
+    }
+
+    footer #contact {
+        margin: 2.4% 4% 0;
+        font-size: 3.25vw;
+    }
+}
+
+@media all and (min-width:0px) and (max-width: 649px) and (orientation:portrait) {
 
     #mobilePortrait {
         display: block;
@@ -1207,7 +1192,7 @@ article {
         padding: 40% 0 0 0;
         height: 0;
         background: #5c4109;
-        top: 30%;
+        margin: 10% 0;
         left: 15%;
         border-radius: 10%/17%;
     }
@@ -1233,12 +1218,34 @@ article {
         font-size: 6.5vw;
         line-height: 150%;
     }
+
+    svg {
+        position: absolute;
+    }
 }
 
-/*@media all and (min-width:481px) and (max-width: 568px) {
+@media all and (min-width:569px) and (max-width: 649px){
+
+    #pageBorder {
+        padding: 0;
+        margin: 0;
+        background: none;
+    }
+
+    #page {
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+        position: relative;
+        width: 100%;
+        padding: 0;
+        z-index: 500;
+    }
 
     header #headerImage {
-        background-image: url("Header_Narrow.jpg");
+        background-image: url("Images/Header_Narrow.jpg");
         background-repeat: no-repeat;
         background-size: contain;
         position: relative;
@@ -1249,7 +1256,7 @@ article {
     header #navArea {
         position: absolute;
         width: 100%;
-        padding: 8% 0 0 0;
+        padding: 12% 0 0 0;
         top: 90%;
         background: linear-gradient(to bottom, #27ab48 0%, #27ab48 47%, #000000 47%, #000000 53%, #45caf5 53%, #45caf5 100%);
     }
@@ -1269,21 +1276,19 @@ article {
         margin: 0 auto;
     }
 
-    header #navArea #navMobile a {
-        text-decoration: none;
-    }
-
-    header #navArea #navMobile a .borderBox {
+    header #navArea #navMobile .borderBox {
         position: relative;
         display: inline-block;
-        padding: .8%;
-        margin: 0 .75%;
+        top: 5%;
         width: 100%;
         height: 90%;
-        background: #000000;
     }
 
-    header #navArea #navMobile a .borderBox #burgerButton {
+    header #navArea #navMobile .borderBox #btnControl {
+        display: none;
+    }
+
+    header #navArea #navMobile .borderBox #burgerButton {
         position: relative;
         display: block;
         height: 100%;
@@ -1294,29 +1299,127 @@ article {
         -o-transition: background .1s ease-in;
         -webkit-transition: background .1s ease-in;
         transition: background .1s ease-in;
+        border-radius: 20%/35%;
     }
 
-    header #navArea #navMobile a:hover .borderBox #burgerButton {
+    header #navArea #navMobile .borderBox #btnControl:checked + #burgerButton {
         background: #ffc70b;
+        z-index: 700;
     }
 
-    header #navArea #navMobile a .borderBox #burgerButton p {
+    header #navArea #navMobile .borderBox #burgerButton p {
         position: absolute;
         text-align: center;
         width: 100%;
-        top: 7%;
+        top: -31%;
         margin: 0;
         text-transform: uppercase;
-        font-family: 'Londrina Solid', cursive;
-        font-size: 2.65vw;
+        font-family: sans-serif;
+        font-size: 15vw;
         color: #000000;
+    }
+
+    header #navArea #navMobile .borderBox #dropDown {
+        position: absolute;
+        width: 500%;
+        height: 285%;
+        top: 50%;
+        left: -200%;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 690;
+    }
+
+    header #navArea #navMobile .borderBox #dropDown svg{
+        position: relative;
+        top: 7%;
+        right: 2%;
+        width: 7%;
+        height: 20%;
+        float: right;
+    }
+
+    header #navArea #navMobile .borderBox #dropDown ul {
+        list-style: none;
+        height: 100%;
+        margin: 2% 0 0;
+        padding: 0 0 0 5%;
+    }
+
+    header #navArea #navMobile .borderBox #dropDown ul li {
+        height: 22%;
+        margin: 0;
+    }
+
+    header #navArea #navMobile .borderBox #dropDown ul li a {
+        text-decoration: none;
+        font-family: 'Londrina Solid', cursive;
+        font-size: 4.75vw;
+        color: #ffffff;
+    }
+
+    header #navArea #navMobile .borderBox #btnControl:checked ~ #dropDown {
+        display: block;
+    }
+
+    #content {
+        padding: 5% 0;
+    }
+
+    #contentWrapper {
+        border-radius: 50px;
+    }
+
+    #contentWrapper .head h1 {
+        font-size: 12vw;
+    }
+
+    article {
+        font-size: 5.25vw;
+    }
+
+    footer #social {
+        margin: 0;
+        width: 50%;
+        padding: 1% 4%;
+    }
+
+    footer #social .socialLink {
+        width: 19%;
+        margin: 1.75% 1.5%;
+    }
+
+    footer #social .socialLink img {
+        width: 90%;
+    }
+
+    footer #contact {
+        margin: 2.9% 4% 0;
+        font-size: 6vw;
     }
 }
 
-@media all and (min-width:321px) and (max-width: 480px) {
+@media all and (min-width:481px) and (max-width: 568px) {
+
+    #pageBorder {
+        padding: 0;
+        margin: 0;
+        background: none;
+    }
+
+    #page {
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+        position: relative;
+        width: 100%;
+        padding: 0;
+        z-index: 500;
+    }
 
     header #headerImage {
-        background-image: url("Header_Narrow.jpg");
+        background-image: url("Images/Header_Narrow.jpg");
         background-repeat: no-repeat;
         background-size: contain;
         position: relative;
@@ -1327,7 +1430,7 @@ article {
     header #navArea {
         position: absolute;
         width: 100%;
-        padding: 8% 0 0 0;
+        padding: 12% 0 0 0;
         top: 90%;
         background: linear-gradient(to bottom, #27ab48 0%, #27ab48 47%, #000000 47%, #000000 53%, #45caf5 53%, #45caf5 100%);
     }
@@ -1347,21 +1450,19 @@ article {
         margin: 0 auto;
     }
 
-    header #navArea #navMobile a {
-        text-decoration: none;
-    }
-
-    header #navArea #navMobile a .borderBox {
+    header #navArea #navMobile .borderBox {
         position: relative;
         display: inline-block;
-        padding: .8%;
-        margin: 0 .75%;
+        top: 5%;
         width: 100%;
         height: 90%;
-        background: #000000;
     }
 
-    header #navArea #navMobile a .borderBox #burgerButton {
+    header #navArea #navMobile .borderBox #btnControl {
+        display: none;
+    }
+
+    header #navArea #navMobile .borderBox #burgerButton {
         position: relative;
         display: block;
         height: 100%;
@@ -1372,29 +1473,127 @@ article {
         -o-transition: background .1s ease-in;
         -webkit-transition: background .1s ease-in;
         transition: background .1s ease-in;
+        border-radius: 20%/35%;
     }
 
-    header #navArea #navMobile a:hover .borderBox #burgerButton {
+    header #navArea #navMobile .borderBox #btnControl:checked + #burgerButton {
         background: #ffc70b;
+        z-index: 700;
     }
 
-    header #navArea #navMobile a .borderBox #burgerButton p {
+    header #navArea #navMobile .borderBox #burgerButton p {
         position: absolute;
         text-align: center;
         width: 100%;
-        top: 7%;
+        top: -31%;
         margin: 0;
         text-transform: uppercase;
-        font-family: 'Londrina Solid', cursive;
-        font-size: 2.65vw;
+        font-family: sans-serif;
+        font-size: 15vw;
         color: #000000;
+    }
+
+    header #navArea #navMobile .borderBox #dropDown {
+        position: absolute;
+        width: 500%;
+        height: 350%;
+        top: 50%;
+        left: -200%;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 690;
+    }
+
+    header #navArea #navMobile .borderBox #dropDown svg{
+        position: relative;
+        top: 7%;
+        right: 2%;
+        width: 8%;
+        height: 20%;
+        float: right;
+    }
+
+    header #navArea #navMobile .borderBox #dropDown ul {
+        list-style: none;
+        height: 100%;
+        margin: 2% 0 0;
+        padding: 0 0 0 5%;
+    }
+
+    header #navArea #navMobile .borderBox #dropDown ul li {
+        height: 23.5%;
+        margin: 0;
+    }
+
+    header #navArea #navMobile .borderBox #dropDown ul li a {
+        text-decoration: none;
+        font-family: 'Londrina Solid', cursive;
+        font-size: 5.75vw;
+        color: #ffffff;
+    }
+
+    header #navArea #navMobile .borderBox #btnControl:checked ~ #dropDown {
+        display: block;
+    }
+
+    #content {
+        padding: 5% 0;
+    }
+
+    #contentWrapper {
+        border-radius: 50px;
+    }
+
+    #contentWrapper .head h1 {
+        font-size: 14vw;
+    }
+
+    article {
+        font-size: 6vw;
+    }
+
+    footer #social {
+        margin: 0;
+        width: 50%;
+        padding: 1% 4%;
+    }
+
+    footer #social .socialLink {
+        width: 19%;
+        margin: 1.75% 1.5%;
+    }
+
+    footer #social .socialLink img {
+        width: 90%;
+    }
+
+    footer #contact {
+        margin: 3% 5% 0;
+        font-size: 6vw;
     }
 }
 
-@media all and (min-width:0px) and (max-width: 320px) {
+@media all and (min-width:375px) and (max-width: 480px) {
+
+    #pageBorder {
+        padding: 0;
+        margin: 0;
+        background: none;
+    }
+
+    #page {
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+        position: relative;
+        width: 100%;
+        padding: 0;
+        z-index: 500;
+    }
 
     header #headerImage {
-        background-image: url("Header_Narrow.jpg");
+        background-image: url("Images/Header_Narrow.jpg");
         background-repeat: no-repeat;
         background-size: contain;
         position: relative;
@@ -1405,7 +1604,7 @@ article {
     header #navArea {
         position: absolute;
         width: 100%;
-        padding: 8% 0 0 0;
+        padding: 12% 0 0 0;
         top: 90%;
         background: linear-gradient(to bottom, #27ab48 0%, #27ab48 47%, #000000 47%, #000000 53%, #45caf5 53%, #45caf5 100%);
     }
@@ -1425,21 +1624,19 @@ article {
         margin: 0 auto;
     }
 
-    header #navArea #navMobile a {
-        text-decoration: none;
-    }
-
-    header #navArea #navMobile a .borderBox {
+    header #navArea #navMobile .borderBox {
         position: relative;
         display: inline-block;
-        padding: .8%;
-        margin: 0 .75%;
+        top: 5%;
         width: 100%;
         height: 90%;
-        background: #000000;
     }
 
-    header #navArea #navMobile a .borderBox #burgerButton {
+    header #navArea #navMobile .borderBox #btnControl {
+        display: none;
+    }
+
+    header #navArea #navMobile .borderBox #burgerButton {
         position: relative;
         display: block;
         height: 100%;
@@ -1450,21 +1647,275 @@ article {
         -o-transition: background .1s ease-in;
         -webkit-transition: background .1s ease-in;
         transition: background .1s ease-in;
+        border-radius: 20%/35%;
     }
 
-    header #navArea #navMobile a:hover .borderBox #burgerButton {
+    header #navArea #navMobile .borderBox #btnControl:checked + #burgerButton {
         background: #ffc70b;
+        z-index: 700;
     }
 
-    header #navArea #navMobile a .borderBox #burgerButton p {
+    header #navArea #navMobile .borderBox #burgerButton p {
         position: absolute;
         text-align: center;
         width: 100%;
-        top: 7%;
+        top: -31%;
         margin: 0;
         text-transform: uppercase;
-        font-family: 'Londrina Solid', cursive;
-        font-size: 2.65vw;
+        font-family: sans-serif;
+        font-size: 15vw;
         color: #000000;
     }
-}*/
+
+    header #navArea #navMobile .borderBox #dropDown {
+        position: absolute;
+        width: 500%;
+        height: 420%;
+        top: 50%;
+        left: -200%;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 690;
+    }
+
+    header #navArea #navMobile .borderBox #dropDown svg{
+        position: relative;
+        top: 5%;
+        right: 2%;
+        width: 8%;
+        height: 20%;
+        float: right;
+    }
+
+    header #navArea #navMobile .borderBox #dropDown ul {
+        list-style: none;
+        height: 100%;
+        margin: 2% 0 0;
+        padding: 0 0 0 5%;
+    }
+
+    header #navArea #navMobile .borderBox #dropDown ul li {
+        height: 23.5%;
+        margin: 0;
+    }
+
+    header #navArea #navMobile .borderBox #dropDown ul li a {
+        text-decoration: none;
+        font-family: 'Londrina Solid', cursive;
+        font-size: 7vw;
+        color: #ffffff;
+    }
+
+    header #navArea #navMobile .borderBox #btnControl:checked ~ #dropDown {
+        display: block;
+    }
+
+    #content {
+        padding: 5% 0;
+    }
+
+    #contentWrapper {
+        border-radius: 30px;
+    }
+
+    #contentWrapper .head h1 {
+        font-size: 16vw;
+    }
+
+    article {
+        font-size: 7vw;
+    }
+
+    footer #social {
+        margin: 0;
+        width: 50%;
+        padding: 1% 4%;
+    }
+
+    footer #social .socialLink {
+        width: 19%;
+        margin: 1.75% 2.5%;
+    }
+
+    footer #social .socialLink img {
+        width: 90%;
+    }
+
+    footer #contact {
+        margin: 3% 5% 0;
+        font-size: 6vw;
+    }
+}
+
+@media all and (min-width:0px) and (max-width: 374px) {
+
+    #pageBorder {
+        padding: 0;
+        margin: 0;
+        background: none;
+    }
+
+    #page {
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+        position: relative;
+        width: 100%;
+        padding: 0;
+        z-index: 500;
+    }
+
+    header #headerImage {
+        background-image: url("Images/Header_Narrow.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        width: 100%;
+        padding: 42% 0 0 0;
+    }
+
+    header #navArea {
+        position: absolute;
+        width: 100%;
+        padding: 12% 0 0 0;
+        top: 90%;
+        background: linear-gradient(to bottom, #27ab48 0%, #27ab48 47%, #000000 47%, #000000 53%, #45caf5 53%, #45caf5 100%);
+    }
+
+    header #navArea nav {
+        display: none;
+    }
+
+    header #navArea #navMobile {
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        height: 100%;
+        width: 20%;
+        margin: 0 auto;
+    }
+
+    header #navArea #navMobile .borderBox {
+        position: relative;
+        display: inline-block;
+        top: 5%;
+        width: 100%;
+        height: 90%;
+    }
+
+    header #navArea #navMobile .borderBox #btnControl {
+        display: none;
+    }
+
+    header #navArea #navMobile .borderBox #burgerButton {
+        position: relative;
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: #ffffff;
+        fill: #ec1262;
+        -moz-transition: background .1s ease-in;
+        -o-transition: background .1s ease-in;
+        -webkit-transition: background .1s ease-in;
+        transition: background .1s ease-in;
+        border-radius: 20%/35%;
+    }
+
+    header #navArea #navMobile .borderBox #btnControl:checked + #burgerButton {
+        background: #ffc70b;
+        z-index: 700;
+    }
+
+    header #navArea #navMobile .borderBox #burgerButton p {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        top: -31%;
+        margin: 0;
+        text-transform: uppercase;
+        font-family: sans-serif;
+        font-size: 15vw;
+        color: #000000;
+    }
+
+    header #navArea #navMobile .borderBox #dropDown {
+        position: absolute;
+        width: 500%;
+        height: 440%;
+        top: 50%;
+        left: -200%;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 690;
+    }
+
+    header #navArea #navMobile .borderBox #dropDown svg{
+        position: relative;
+        top: 5%;
+        right: 2%;
+        width: 10%;
+        height: 20%;
+        float: right;
+    }
+
+    header #navArea #navMobile .borderBox #dropDown ul {
+        list-style: none;
+        height: 100%;
+        margin: 2% 0 0;
+        padding: 0 0 0 5%;
+    }
+
+    header #navArea #navMobile .borderBox #dropDown ul li {
+        height: 23.5%;
+        margin: 0;
+    }
+
+    header #navArea #navMobile .borderBox #dropDown ul li a {
+        text-decoration: none;
+        font-family: 'Londrina Solid', cursive;
+        font-size: 7vw;
+        color: #ffffff;
+    }
+
+    header #navArea #navMobile .borderBox #btnControl:checked ~ #dropDown {
+        display: block;
+    }
+
+    #content {
+        padding: 5% 0;
+    }
+
+    #contentWrapper {
+        border-radius: 20px;
+    }
+
+    #contentWrapper .head h1 {
+        font-size: 16vw;
+    }
+
+    article {
+        font-size: 7vw;
+    }
+
+    footer #social {
+        margin: 0;
+        width: 50%;
+        padding: 1% 4%;
+    }
+
+    footer #social .socialLink {
+        width: 19%;
+        margin: 1.75% 2.5%;
+    }
+
+    footer #social .socialLink img {
+        width: 90%;
+    }
+
+    footer #contact {
+        margin: 3% 5% 0;
+        font-size: 6vw;
+    }
+}
