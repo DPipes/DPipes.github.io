@@ -973,6 +973,10 @@ article {
         height: 90%;
     }
 
+    header #navArea #navMobile .borderBox #btnControl {
+        display: none;
+    }
+
     header #navArea #navMobile .borderBox #burgerButton {
         position: relative;
         display: block;
@@ -987,7 +991,7 @@ article {
         border-radius: 20%/35%;
     }
 
-    header #navArea #navMobile .borderBox:hover #burgerButton {
+    header #navArea #navMobile .borderBox #btnControl:checked + #burgerButton {
         background: #ffc70b;
         z-index: 700;
     }
@@ -1010,7 +1014,8 @@ article {
         height: 275%;
         top: 50%;
         left: -200%;
-        background: rgba(0, 0, 0, 0.8);
+        background: #000000;
+        opacity: 0.8;
         z-index: 690;
     }
 
@@ -1032,7 +1037,7 @@ article {
         color: #ffffff;
     }
 
-    header #navArea #navMobile .borderBox:hover #dropDown {
+    header #navArea #navMobile .borderBox #btnControl:checked ~ #dropDown {
         display: block;
     }
 
@@ -1104,6 +1109,10 @@ article {
         height: 90%;
     }
 
+    header #navArea #navMobile .borderBox #btnControl {
+        display: none;
+    }
+
     header #navArea #navMobile .borderBox #burgerButton {
         position: relative;
         display: block;
@@ -1118,7 +1127,7 @@ article {
         border-radius: 20%/35%;
     }
 
-    header #navArea #navMobile .borderBox:hover #burgerButton {
+    header #navArea #navMobile .borderBox #btnControl:checked + #burgerButton {
         background: #ffc70b;
         z-index: 700;
     }
@@ -1141,7 +1150,8 @@ article {
         height: 275%;
         top: 50%;
         left: -200%;
-        background: rgba(0, 0, 0, 0.8);
+        background: #000000;
+        opacity: 0.8;
         z-index: 690;
     }
 
@@ -1163,7 +1173,7 @@ article {
         color: #ffffff;
     }
 
-    header #navArea #navMobile .borderBox:hover #dropDown {
+    header #navArea #navMobile .borderBox #btnControl:checked ~ #dropDown {
         display: block;
     }
 
