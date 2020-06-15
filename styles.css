@@ -1155,6 +1155,15 @@ article {
         z-index: 690;
     }
 
+    header #navArea #navMobile .borderBox #dropDown svg{
+        position: relative;
+        top: 7%;
+        right: 2%;
+        width: 5%;
+        height: 20%;
+        float: right;
+    }
+
     header #navArea #navMobile .borderBox #dropDown ul {
         list-style: none;
         height: 100%;
