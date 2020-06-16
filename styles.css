@@ -119,6 +119,7 @@ header #navArea #navMobile .borderBox #dropDown {
 
 #contentWrapper {
     width: 92%;
+    padding: 0 0 .1% 0;
     margin: 7% auto 5%;
     background: rgba(255, 255, 255, 0.9);
     border-radius: 100px;
@@ -132,6 +133,22 @@ header #navArea #navMobile .borderBox #dropDown {
     text-align: center;
     padding: 3% 0 0;
     margin: 0;
+}
+
+#contentWrapper iframe {
+    width: 85%;
+    display: block;
+    border: 7px solid #18701f;
+    border-radius: 30px;
+    margin: 3% auto;
+}
+
+#contentWrapper .spotify {
+    height: 300px;
+}
+
+#contentWrapper .youtube {
+    height: 820px;
 }
 
 article {
@@ -920,6 +937,44 @@ footer #contact {
     filter: url(#luminosity-invert);
 }
 
+@media all and (min-width:1376px) and (max-width: 1580px) {
+
+    #contentWrapper iframe {
+        width: 85%;
+        border: 7px solid #18701f;
+        border-radius: 30px;
+        margin: 2% auto 3%;
+    }
+
+    #contentWrapper .spotify {
+        height: 250px;
+        margin: 2% auto 2%;
+    }
+
+    #contentWrapper .youtube {
+        height: 700px;
+    }
+}
+
+@media all and (min-width:1025px) and (max-width: 1375px) {
+
+    #contentWrapper iframe {
+        width: 85%;
+        border: 7px solid #18701f;
+        border-radius: 30px;
+        margin: 2% auto 3%;
+    }
+
+    #contentWrapper .spotify {
+        height: 250px;
+        margin: 2% auto 2%;
+    }
+
+    #contentWrapper .youtube {
+        height: 625px;
+    }
+}
+
 @media all and (min-width:960px) and (max-width: 1024px) {
 
     header #headerImage {
@@ -933,6 +988,21 @@ footer #contact {
 
     #contentWrapper {
         border-radius: 70px;
+    }
+
+    #contentWrapper iframe {
+        width: 85%;
+        border: 9px solid #18701f;
+        border-radius: 30px;
+        margin: 2% auto 4%;
+    }
+
+    #contentWrapper .spotify {
+        height: 220px;
+    }
+
+    #contentWrapper .youtube {
+        height: 475px;
     }
 
     footer #social {
@@ -973,6 +1043,21 @@ footer #contact {
 
     #contentWrapper .head h1 {
         font-size: 8vw;
+    }
+
+    #contentWrapper iframe {
+        width: 90%;
+        border: 9px solid #18701f;
+        border-radius: 30px;
+        margin: 2% auto 4%;
+    }
+
+    #contentWrapper .spotify {
+        height: 220px;
+    }
+
+    #contentWrapper .youtube {
+        height: 450px;
     }
 
     article {
@@ -1147,6 +1232,21 @@ footer #contact {
 
     #contentWrapper .head h1 {
         font-size: 10vw;
+    }
+
+    #contentWrapper iframe {
+        width: 90%;
+        border: 9px solid #18701f;
+        border-radius: 30px;
+        margin: 2% auto 4%;
+    }
+
+    #contentWrapper .spotify {
+        height: 220px;
+    }
+
+    #contentWrapper .youtube {
+        height: 410px;
     }
 
     article {
@@ -1370,6 +1470,21 @@ footer #contact {
         font-size: 12vw;
     }
 
+    #contentWrapper iframe {
+        width: 90%;
+        border: 9px solid #18701f;
+        border-radius: 20px;
+        margin: 2% auto 4%;
+    }
+
+    #contentWrapper .spotify {
+        height: 200px;
+    }
+
+    #contentWrapper .youtube {
+        height: 340px;
+    }
+
     article {
         font-size: 5.25vw;
     }
@@ -1542,6 +1657,21 @@ footer #contact {
 
     #contentWrapper .head h1 {
         font-size: 14vw;
+    }
+
+    #contentWrapper iframe {
+        width: 90%;
+        border: 7px solid #18701f;
+        border-radius: 15px;
+        margin: 2% auto 4%;
+    }
+
+    #contentWrapper .spotify {
+        height: 200px;
+    }
+
+    #contentWrapper .youtube {
+        height: 280px;
     }
 
     article {
@@ -1718,6 +1848,21 @@ footer #contact {
         font-size: 16vw;
     }
 
+    #contentWrapper iframe {
+        width: 90%;
+        border: 6px solid #18701f;
+        border-radius: 15px;
+        margin: 2% auto 4%;
+    }
+
+    #contentWrapper .spotify {
+        height: 180px;
+    }
+
+    #contentWrapper .youtube {
+        height: 240px;
+    }
+
     article {
         font-size: 7vw;
     }
@@ -1890,6 +2035,21 @@ footer #contact {
 
     #contentWrapper .head h1 {
         font-size: 16vw;
+    }
+
+    #contentWrapper iframe {
+        width: 90%;
+        border: 4px solid #18701f;
+        border-radius: 10px;
+        margin: 2% auto 4%;
+    }
+
+    #contentWrapper .spotify {
+        height: 180px;
+    }
+
+    #contentWrapper .youtube {
+        height: 200px;
     }
 
     article {
