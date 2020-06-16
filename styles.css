@@ -1169,16 +1169,12 @@ footer #contact {
         z-index: 700;
     }
 
-    header #navArea #navMobile .borderBox #burgerButton p {
-        position: absolute;
-        text-align: center;
-        width: 100%;
-        top: -31%;
-        margin: 0;
-        text-transform: uppercase;
-        font-family: sans-serif;
-        font-size: 15vw;
-        color: #000000;
+    header #navArea #navMobile .borderBox #burgerButton svg {
+        fill: #000000; 
+    }
+
+    header #navArea #navMobile .borderBox #btnControl:checked + #burgerButton svg {
+        fill: #ed1262; 
     }
 
     header #navArea #navMobile .borderBox #dropDown {
@@ -1404,16 +1400,12 @@ footer #contact {
         z-index: 700;
     }
 
-    header #navArea #navMobile .borderBox #burgerButton p {
-        position: absolute;
-        text-align: center;
-        width: 100%;
-        top: -31%;
-        margin: 0;
-        text-transform: uppercase;
-        font-family: sans-serif;
-        font-size: 15vw;
-        color: #000000;
+    header #navArea #navMobile .borderBox #burgerButton svg {
+        fill: #000000; 
+    }
+
+    header #navArea #navMobile .borderBox #btnControl:checked + #burgerButton svg {
+        fill: #ed1262; 
     }
 
     header #navArea #navMobile .borderBox #dropDown {
@@ -1593,16 +1585,12 @@ footer #contact {
         z-index: 700;
     }
 
-    header #navArea #navMobile .borderBox #burgerButton p {
-        position: absolute;
-        text-align: center;
-        width: 100%;
-        top: -31%;
-        margin: 0;
-        text-transform: uppercase;
-        font-family: sans-serif;
-        font-size: 15vw;
-        color: #000000;
+    header #navArea #navMobile .borderBox #burgerButton svg {
+        fill: #000000; 
+    }
+
+    header #navArea #navMobile .borderBox #btnControl:checked + #burgerButton svg {
+        fill: #ed1262; 
     }
 
     header #navArea #navMobile .borderBox #dropDown {
@@ -1782,16 +1770,12 @@ footer #contact {
         z-index: 700;
     }
 
-    header #navArea #navMobile .borderBox #burgerButton p {
-        position: absolute;
-        text-align: center;
-        width: 100%;
-        top: -31%;
-        margin: 0;
-        text-transform: uppercase;
-        font-family: sans-serif;
-        font-size: 15vw;
-        color: #000000;
+    header #navArea #navMobile .borderBox #burgerButton svg {
+        fill: #000000; 
+    }
+
+    header #navArea #navMobile .borderBox #btnControl:checked + #burgerButton svg {
+        fill: #ed1262; 
     }
 
     header #navArea #navMobile .borderBox #dropDown {
@@ -1971,16 +1955,12 @@ footer #contact {
         z-index: 700;
     }
 
-    header #navArea #navMobile .borderBox #burgerButton p {
-        position: absolute;
-        text-align: center;
-        width: 100%;
-        top: -31%;
-        margin: 0;
-        text-transform: uppercase;
-        font-family: sans-serif;
-        font-size: 15vw;
-        color: #000000;
+    header #navArea #navMobile .borderBox #burgerButton svg {
+        fill: #000000; 
+    }
+
+    header #navArea #navMobile .borderBox #btnControl:checked + #burgerButton svg {
+        fill: #ed1262; 
     }
 
     header #navArea #navMobile .borderBox #dropDown {
