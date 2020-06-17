@@ -29,7 +29,6 @@ body {
     margin: 0 .25%;
     z-index: 1;
     background-color: #45caf5;
-    background: url(Images/Background.svg);
 }
 
 header {
@@ -117,6 +116,7 @@ header #navArea #navMobile .borderBox #dropDown {
 #content {
     width: 100%;
     padding: 0 0 1%;
+    background: url(Images/Background.svg);
     flex-grow: 1;
 }
 
