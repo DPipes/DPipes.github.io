@@ -44,12 +44,12 @@ header {
 }
 
 header #headerImage {
-    background-image: url("Images/Header.jpg");
+    background-image: url("Images/Header.png");
     background-repeat: no-repeat;
     background-size: contain;
     position: relative;
     width: 100%;
-    padding: 28.8% 0 0 0;
+    padding: 26% 0 0 0;
 }
 
 header #navArea {
@@ -57,7 +57,7 @@ header #navArea {
     width: 100%;
     padding: 4.5% 0 0 0;
     top: 90%;
-    background: linear-gradient(to bottom, #27ab48 0%, #27ab48 47%, #000000 47%, #000000 53%, #45caf5 53%, #45caf5 100%);
+    background: linear-gradient(to bottom, #24ad4b 0%, #24ad4b 47%, #000000 47%, #000000 53%, #45caf5 53%, #45caf5 100%);
 }
 
 header #navArea nav {
@@ -140,6 +140,10 @@ header #navArea #navMobile .borderBox #dropDown {
     text-align: center;
     padding: 3% 0 0;
     margin: 0;
+}
+
+#contentWrapper article .rowWarn{
+    color: #ff1408;
 }
 
 #contentWrapper iframe {
@@ -231,7 +235,7 @@ article .list .top {
 
 footer {
     width: 100%;
-    background: #27ab48;
+    background: #24ad4b;
 }
 
 footer #social {
@@ -1085,12 +1089,12 @@ footer #contact {
 @media all and (min-width:960px) and (max-width: 1024px) {
 
     header #headerImage {
-        background-image: url("Images/Header_Mid.jpg");
+        background-image: url("Images/Header_Mid.png");
         background-repeat: no-repeat;
         background-size: contain;
         position: relative;
         width: 100%;
-        padding: 34.5% 0 0 0;
+        padding: 32% 0 0 0;
     }
 
     #contentWrapper {
@@ -1142,12 +1146,12 @@ footer #contact {
 @media all and (min-width:801px) and (max-width: 959px) {
 
     header #headerImage {
-        background-image: url("Images/Header_Mid.jpg");
+        background-image: url("Images/Header_Mid.png");
         background-repeat: no-repeat;
         background-size: contain;
         position: relative;
         width: 100%;
-        padding: 34.5% 0 0 0;
+        padding: 32% 0 0 0;
     }
 
     #contentWrapper {
@@ -1242,12 +1246,12 @@ footer #contact {
     }
 
     header #headerImage {
-        background-image: url("Images/Header_Narrow.jpg");
+        background-image: url("Images/Header_Narrow.png");
         background-repeat: no-repeat;
         background-size: contain;
         position: relative;
         width: 100%;
-        padding: 42% 0 0 0;
+        padding: 37% 0 0 0;
     }
 
     header #navArea {
@@ -1255,7 +1259,7 @@ footer #contact {
         width: 100%;
         padding: 12% 0 0 0;
         top: 90%;
-        background: linear-gradient(to bottom, #27ab48 0%, #27ab48 47%, #000000 47%, #000000 53%, #45caf5 53%, #45caf5 100%);
+        background: linear-gradient(to bottom, #24ad4b 0%, #24ad4b 47%, #000000 47%, #000000 53%, #45caf5 53%, #45caf5 100%);
     }
 
     header #navArea nav {
@@ -1429,10 +1433,13 @@ footer #contact {
 
 @media all and (min-width:0px) and (max-width: 649px) and (orientation:portrait) {
 
+    #mapControl {
+        display: none;
+    }
+
     #mobilePortrait {
         display: block;
         position: relative;
-        margin: 10% 0 0;
     }
 
     #mobilePortrait #portraitBorder {
@@ -1472,6 +1479,19 @@ footer #contact {
     svg {
         position: absolute;
     }
+
+    #mobilePortrait #portraitBorder #portrait svg {
+        position: relative;
+        top: 2%;
+        right: 2%;
+        width: 7%;
+        height: 20%;
+        float: right;
+    }
+
+    #mapControl:checked + #portraitBorder {
+        display: none;
+    }
 }
 
 @media all and (min-width:569px) and (max-width: 649px){
@@ -1495,12 +1515,12 @@ footer #contact {
     }
 
     header #headerImage {
-        background-image: url("Images/Header_Narrow.jpg");
+        background-image: url("Images/Header_Narrow.png");
         background-repeat: no-repeat;
         background-size: contain;
         position: relative;
         width: 100%;
-        padding: 42% 0 0 0;
+        padding: 37% 0 0 0;
     }
 
     header #navArea {
@@ -1508,7 +1528,7 @@ footer #contact {
         width: 100%;
         padding: 12% 0 0 0;
         top: 90%;
-        background: linear-gradient(to bottom, #27ab48 0%, #27ab48 47%, #000000 47%, #000000 53%, #45caf5 53%, #45caf5 100%);
+        background: linear-gradient(to bottom, #24ad4b 0%, #24ad4b 47%, #000000 47%, #000000 53%, #45caf5 53%, #45caf5 100%);
     }
 
     header #navArea nav {
@@ -1702,12 +1722,12 @@ footer #contact {
     }
 
     header #headerImage {
-        background-image: url("Images/Header_Narrow.jpg");
+        background-image: url("Images/Header_Narrow.png");
         background-repeat: no-repeat;
         background-size: contain;
         position: relative;
         width: 100%;
-        padding: 42% 0 0 0;
+        padding: 37% 0 0 0;
     }
 
     header #navArea {
@@ -1715,7 +1735,7 @@ footer #contact {
         width: 100%;
         padding: 12% 0 0 0;
         top: 90%;
-        background: linear-gradient(to bottom, #27ab48 0%, #27ab48 47%, #000000 47%, #000000 53%, #45caf5 53%, #45caf5 100%);
+        background: linear-gradient(to bottom, #24ad4b 0%, #24ad4b 47%, #000000 47%, #000000 53%, #45caf5 53%, #45caf5 100%);
     }
 
     header #navArea nav {
@@ -1909,12 +1929,12 @@ footer #contact {
     }
 
     header #headerImage {
-        background-image: url("Images/Header_Narrow.jpg");
+        background-image: url("Images/Header_Narrow.png");
         background-repeat: no-repeat;
         background-size: contain;
         position: relative;
         width: 100%;
-        padding: 42% 0 0 0;
+        padding: 37% 0 0 0;
     }
 
     header #navArea {
@@ -1922,7 +1942,7 @@ footer #contact {
         width: 100%;
         padding: 12% 0 0 0;
         top: 90%;
-        background: linear-gradient(to bottom, #27ab48 0%, #27ab48 47%, #000000 47%, #000000 53%, #45caf5 53%, #45caf5 100%);
+        background: linear-gradient(to bottom, #24ad4b 0%, #24ad4b 47%, #000000 47%, #000000 53%, #45caf5 53%, #45caf5 100%);
     }
 
     header #navArea nav {
@@ -2117,12 +2137,12 @@ footer #contact {
     }
 
     header #headerImage {
-        background-image: url("Images/Header_Narrow.jpg");
+        background-image: url("Images/Header_Narrow.png");
         background-repeat: no-repeat;
         background-size: contain;
         position: relative;
         width: 100%;
-        padding: 42% 0 0 0;
+        padding: 37% 0 0 0;
     }
 
     header #navArea {
@@ -2130,7 +2150,7 @@ footer #contact {
         width: 100%;
         padding: 12% 0 0 0;
         top: 90%;
-        background: linear-gradient(to bottom, #27ab48 0%, #27ab48 47%, #000000 47%, #000000 53%, #45caf5 53%, #45caf5 100%);
+        background: linear-gradient(to bottom, #24ad4b 0%, #24ad4b 47%, #000000 47%, #000000 53%, #45caf5 53%, #45caf5 100%);
     }
 
     header #navArea nav {
