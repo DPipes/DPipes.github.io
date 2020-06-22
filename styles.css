@@ -124,23 +124,6 @@ header #navArea #navMobile .borderBox #dropDown {
     flex-grow: 1;
 }
 
-#content #clock {
-    position: relative;
-    display: block;
-    margin: 5% auto;
-    text-align: center;
-    font-size: 6vw;
-}
-
-#content .youtube {
-    height: 700px;
-    width: 70%;
-    display: block;
-    border: 7px solid #18701f;
-    border-radius: 30px;
-    margin: 3% auto;
-}
-
 #contentWrapper {
     width: 92%;
     padding: 0 0 .1% 0;
@@ -180,9 +163,16 @@ article {
     font-weight: 300;
     font-size: 3vw;
     color: #18701f;
-    text-align: center;
     line-height: 120%;
     padding: 0 3% 5%;
+}
+
+article p {
+    text-align: center;
+}
+
+article a {
+    color: #18701f;
 }
 
 article .contact {
@@ -210,7 +200,24 @@ article .contact p {
     line-height: 130%;
 }
 
-article .contact p a {
+article #clock {
+    color: #ff6a00;
+}
+
+article #clock p {
+    margin: 3% 0 0 0;
+}
+
+article .list {
+    text-align: left;
+    color: #a77544;
+}
+
+article .list p {
+    text-align: left;
+}
+
+article .list .top {
     color: #18701f;
 }
 
