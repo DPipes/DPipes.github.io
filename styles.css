@@ -1295,7 +1295,6 @@ footer #contact {
         height: 100%;
         width: 100%;
         background: #ffffff;
-        fill: #ec1262;
         -moz-transition: background .1s ease-in;
         -o-transition: background .1s ease-in;
         -webkit-transition: background .1s ease-in;
@@ -1308,12 +1307,11 @@ footer #contact {
         z-index: 700;
     }
 
-    header #navArea #navMobile .borderBox #burgerButton svg {
-        fill: #000000; 
-    }
-
-    header #navArea #navMobile .borderBox #btnControl:checked + #burgerButton svg {
-        fill: #ed1262; 
+    header #navArea #navMobile .borderBox #burgerButton img {
+        position: relative;
+        width: 55%;
+        left: 50%;
+        transform: translate(-50%);
     }
 
     header #navArea #navMobile .borderBox #dropDown {
@@ -1577,12 +1575,11 @@ footer #contact {
         z-index: 700;
     }
 
-    header #navArea #navMobile .borderBox #burgerButton svg {
-        fill: #000000; 
-    }
-
-    header #navArea #navMobile .borderBox #btnControl:checked + #burgerButton svg {
-        fill: #ed1262; 
+    header #navArea #navMobile .borderBox #burgerButton img {
+        position: relative;
+        width: 55%;
+        left: 50%;
+        transform: translate(-50%);
     }
 
     header #navArea #navMobile .borderBox #dropDown {
@@ -1784,12 +1781,11 @@ footer #contact {
         z-index: 700;
     }
 
-    header #navArea #navMobile .borderBox #burgerButton svg {
-        fill: #000000; 
-    }
-
-    header #navArea #navMobile .borderBox #btnControl:checked + #burgerButton svg {
-        fill: #ed1262; 
+    header #navArea #navMobile .borderBox #burgerButton img {
+        position: relative;
+        width: 55%;
+        left: 50%;
+        transform: translate(-50%);
     }
 
     header #navArea #navMobile .borderBox #dropDown {
@@ -1991,12 +1987,11 @@ footer #contact {
         z-index: 700;
     }
 
-    header #navArea #navMobile .borderBox #burgerButton svg {
-        fill: #000000; 
-    }
-
-    header #navArea #navMobile .borderBox #btnControl:checked + #burgerButton svg {
-        fill: #ed1262; 
+    header #navArea #navMobile .borderBox #burgerButton img {
+        position: relative;
+        width: 55%;
+        left: 50%;
+        transform: translate(-50%);
     }
 
     header #navArea #navMobile .borderBox #dropDown {
@@ -2199,12 +2194,11 @@ footer #contact {
         z-index: 700;
     }
 
-    header #navArea #navMobile .borderBox #burgerButton svg {
-        fill: #000000; 
-    }
-
-    header #navArea #navMobile .borderBox #btnControl:checked + #burgerButton svg {
-        fill: #ed1262; 
+    header #navArea #navMobile .borderBox #burgerButton img {
+        position: relative;
+        width: 55%;
+        left: 50%;
+        transform: translate(-50%);
     }
 
     header #navArea #navMobile .borderBox #dropDown {
