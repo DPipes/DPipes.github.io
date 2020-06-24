@@ -204,6 +204,13 @@ article .contact p {
     line-height: 130%;
 }
 
+article .norm {
+    text-align: left;
+    margin: 3% 5%;
+    color: #18701f;
+    border-bottom: 5px solid #a77544;
+}
+
 article #clock {
     color: #ff6a00;
 }
