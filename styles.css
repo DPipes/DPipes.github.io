@@ -232,6 +232,106 @@ article .list .top {
     color: #18701f;
 }
 
+/* Slideshow container */
+.slideshow-container * {
+    box-sizing: border-box;
+}
+
+.slideshow-container {
+    width: 90%;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.slideshow-container img {
+    border-radius: 30px;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 2%;
+    color: #ed1262;
+    font-size: 2vw;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: #ed1262;
+    font-size: 2vw;
+    padding: 2%;
+    position: absolute;
+    bottom: 1%;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #ed1262;
+    font-size: 2vw;
+    padding: 2%;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
 #backMap {
     position: fixed;
     top: 75%;
@@ -1123,6 +1223,21 @@ footer #contact {
         height: 475px;
     }
 
+    /* Next & previous buttons */
+    .prev, .next {
+        font-size: 2.5vw;
+    }
+
+    /* Caption text */
+    .text {
+        font-size: 2.5vw;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+        font-size: 2.5vw;
+    }
+
     #backMap {
         top: 80%;
         width: 12%;
@@ -1207,6 +1322,21 @@ footer #contact {
     article .norm {
         margin: 3% 6%;
         border-bottom: 5px solid #a77544;
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+        font-size: 2.5vw;
+    }
+
+    /* Caption text */
+    .text {
+        font-size: 2.5vw;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+        font-size: 2.5vw;
     }
 
     #backMap {
@@ -1417,6 +1547,21 @@ footer #contact {
     article .norm {
         margin: 3% 4%;
         border-bottom: 3px solid #a77544;
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+        font-size: 2.75vw;
+    }
+
+    /* Caption text */
+    .text {
+        font-size: 2.75vw;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+        font-size: 2.75vw;
     }
 
     #backMap {
@@ -1693,6 +1838,21 @@ footer #contact {
         border-bottom: 2px solid #a77544;
     }
 
+    /* Next & previous buttons */
+    .prev, .next {
+        font-size: 3vw;
+    }
+
+    /* Caption text */
+    .text {
+        font-size: 3vw;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+        font-size: 3vw;
+    }
+
     #backMap {
         top: 78%;
         width: 19%;
@@ -1902,6 +2062,22 @@ footer #contact {
     article .norm {
         margin: 4% 3%;
         border-bottom: 2px solid #a77544;
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+        font-size: 3.5vw;
+    }
+
+    /* Caption text */
+    .text {
+        font-size: 3.25vw;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+        font-size: 3.25vw;
+        padding: 3%;
     }
 
     #backMap {
@@ -2115,6 +2291,22 @@ footer #contact {
         border-bottom: 2px solid #a77544;
     }
 
+    /* Next & previous buttons */
+    .prev, .next {
+        font-size: 4.25vw;
+    }
+
+    /* Caption text */
+    .text {
+        font-size: 4vw;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+        font-size: 4vw;
+        padding: 3%;
+    }
+
     #backMap {
         top: auto;
         bottom: 20%;
@@ -2325,6 +2517,22 @@ footer #contact {
     article .norm {
         margin: 4% 3%;
         border-bottom: 2px solid #a77544;
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+        font-size: 4.75vw;
+    }
+
+    /* Caption text */
+    .text {
+        font-size: 4.5vw;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+        font-size: 4.5vw;
+        padding: 4%;
     }
 
     #backMap {
