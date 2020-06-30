@@ -108,38 +108,41 @@
                                 screwdriver (or something similar, like a butter knife or chisel)<br /><br />
                             </p>
                         </div>
+                        <p><a href="../Documents/Art_and_Sculpture_Handout.pdf">Click here</a> for the Art and
+                        Sculpture handout.</p>
                     </article>
+                    <iframe class="youtube" src="https://www.youtube.com/embed/videoseries?list=PLxzLzSNp3l9QYaduNY3TTnxlpLbl3Huff" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <!-- Slideshow container -->
                     <div class="slideshow-container">
 
                         <!-- Full-width images with number and caption text -->
                         <div class="mySlides fade">
                             <div class="numbertext">1 / 5</div>
-                            <img src="../Images/shading.jpg" style="width:100%">
+                            <img src="../Images/shading.JPG" style="width:100%">
                             <div class="text">Types of Shading</div>
                         </div>
 
                         <div class="mySlides fade">
                             <div class="numbertext">2 / 5</div>
-                            <img src="../Images/paint1.jpg" style="width:100%">
+                            <img src="../Images/paint1.JPG" style="width:100%">
                             <div class="text">Watercolor Paint</div>
                         </div>
 
                         <div class="mySlides fade">
                             <div class="numbertext">3 / 5</div>
-                            <img src="../Images/paint2.jpg" style="width:100%">
+                            <img src="../Images/paint2.JPG" style="width:100%">
                             <div class="text">Acrylic Paint</div>
                         </div>
 
                         <div class="mySlides fade">
                             <div class="numbertext">4 / 5</div>
-                            <img src="../Images/paint3.jpg" style="width:100%">
+                            <img src="../Images/paint3.JPG" style="width:100%">
                             <div class="text">Pencil</div>
                         </div>
 
                         <div class="mySlides fade">
                             <div class="numbertext">5 / 5</div>
-                            <img src="../Images/paint4.jpg" style="width:100%">
+                            <img src="../Images/paint4.JPG" style="width:100%">
                             <div class="text">Pen</div>
                         </div>
 
@@ -163,29 +166,29 @@
 
                         // Next/previous controls
                         function plusSlides(n) {
-                        showSlides(slideIndex += n);
+                            showSlides(slideIndex += n);
                         }
 
                         // Thumbnail image controls
                         function currentSlide(n) {
-                        showSlides(slideIndex = n);
+                            showSlides(slideIndex = n);
                         }
 
                         function showSlides(n) {
-                        var i;
-                        var slides = document.getElementsByClassName("mySlides");
-                        var dots = document.getElementsByClassName("dot");
-                        if (n > slides.length) {slideIndex = 1}
-                        if (n < 1) {slideIndex = slides.length}
-                        for (i = 0; i < slides.length; i++) {
-                        slides[i].style.display = "none";
-                        }
-                        for (i = 0; i < dots.length; i++) {
-                        dots[i].className = dots[i].className.replace(" active", "");
-                        }
-                        slides[slideIndex-1].style.display = "block";
-                        dots[slideIndex-1].className += " active";
+                            var i;
+                            var slides = document.getElementsByClassName("mySlides");
+                            var dots = document.getElementsByClassName("dot");
+                            if (n > slides.length) { slideIndex = 1 }
+                            if (n < 1) { slideIndex = slides.length }
+                            for (i = 0; i < slides.length; i++) {
+                                slides[i].style.display = "none";
                             }
+                            for (i = 0; i < dots.length; i++) {
+                                dots[i].className = dots[i].className.replace(" active", "");
+                            }
+                            slides[slideIndex - 1].style.display = "block";
+                            dots[slideIndex - 1].className += " active";
+                        }
                     </script>
                 </div>
             </div>
