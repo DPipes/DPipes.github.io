@@ -1,0 +1,1983 @@
+body {
+    font-family: 'Cutive', serif;
+    color: #d45521;
+}
+
+article, aside, figcaption, figure, footer, header, #navArea, nav, header #navArea nav .navLink:hover .navDropdown, nav, section {
+    display: block;
+}
+
+img {
+    border-style: none;
+}
+
+body {
+    margin: 0;
+    background: #a23d27;
+}
+
+#pageBorder {
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0 2%;
+    z-index: 0;
+    background: #d45521;
+}
+
+#page {
+    width: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0 .25%;
+    z-index: 1;
+    background-color: #f6b759;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    z-index: 500;
+}
+
+header #headerImage {
+    background-image: url("Images/Header.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    width: 100%;
+    padding: 26% 0 0 0;
+}
+
+header #navArea {
+    position: absolute;
+    width: 100%;
+    padding: 4.5% 0 0 0;
+    top: 90%;
+    background: linear-gradient(to bottom, #24ad4b 0%, #24ad4b 47%, #000000 47%, #000000 53%, #45caf5 53%, #45caf5 100%);
+}
+
+header #navArea nav {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+header #navArea nav a {
+    text-decoration: none;
+}
+
+header #navArea nav a .borderBox {
+    position: relative;
+    display: inline-block;
+    padding: .25%;
+    margin: 0 .75%;
+    width: 20%;
+    height: 90%;
+    background: #000000;
+}
+
+header #navArea nav a .borderBox .navLink {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #ffffff;
+    -moz-transition: background .1s ease-in;
+    -o-transition: background .1s ease-in;
+    -webkit-transition: background .1s ease-in;
+    transition: background .1s ease-in;
+}
+
+header #navArea nav a:hover .borderBox .navLink {
+    background: #ffc70b;
+}
+
+header #navArea nav a .borderBox .navLink p {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 7%;
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'Cutive', serif;
+    font-size: 2.65vw;
+    color: #000000;
+}
+
+header #navArea #navMobile {
+    display: none;
+}
+
+header #navArea #navMobile .borderBox #dropDown {
+    display :none;
+}
+
+#content {
+    width: 100%;
+    padding: 0 0 1%;
+    flex-grow: 1;
+}
+
+#contentWrapper {
+    width: 92%;
+    padding: 0 0 .1% 0;
+    margin: 3% auto;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 65px;
+}
+
+#contentWrapper .head h1 {
+    font-family: 'Cutive', serif;
+    font-weight: 300;
+    font-size: 6vw;
+    color: #d45521;
+    text-align: center;
+    padding: 3% 0 0;
+    margin: 0;
+}
+
+#contentWrapper article .rowWarn{
+    color: #ff1408;
+}
+
+#contentWrapper iframe {
+    width: 90%;
+    max-width: 986px;
+    display: block;
+    border: 7px solid #fee05f;
+    border-radius: 30px;
+    margin: 3% auto;
+}
+
+#contentWrapper .spotify {
+    height: 300px;
+}
+
+#contentWrapper .youtube {
+    height: 820px;
+}
+
+article {
+    font-family: 'Cutive', serif;
+    font-weight: 300;
+    font-size: 2vw;
+    color: #d45521;
+    line-height: 140%;
+    padding: 0 3%;
+}
+
+article p {
+    text-align: left;
+}
+
+article a {
+    color: #d45521;
+}
+
+article .contact {
+    text-align: left;
+    margin: 3% 5%;
+    color: #000000;
+    font-family: 'Cutive', serif;
+    border-bottom: 5px solid #000000;
+}
+
+article .contact h4 {
+    text-align: left;
+    margin: 0;
+    color: #000000;
+    font-family: 'Cutive', serif;
+    font-size: 2.25vw;
+}
+
+article .contact p {
+    text-align: left;
+    margin: 2% 4% 3%;
+    color: #000000;
+    font-family: 'Cutive', serif;
+    font-size: 2vw;
+    line-height: 130%;
+}
+
+article .norm {
+    text-align: left;
+    margin: 3% 5%;
+    color: #d45521;
+    border-bottom: 5px solid #a77544;
+}
+
+article #clock {
+    color: #ff6a00;
+}
+
+article #clock p {
+    margin: 3% 0 0 0;
+}
+
+article .list {
+    text-align: left;
+    color: #a77544;
+}
+
+article .list p {
+    text-align: left;
+}
+
+article .list .top {
+    color: #d45521;
+}
+
+/* Slideshow container */
+.slideshow-container * {
+    box-sizing: border-box;
+}
+
+.slideshow-container {
+    width: 86.5%;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.slideshow-container img {
+    border: 7px solid #d45521;
+    border-radius: 30px;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 2%;
+    color: #ed1262;
+    font-size: 2vw;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: #ed1262;
+    font-size: 2vw;
+    padding: 2%;
+    position: absolute;
+    bottom: 1%;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #ed1262;
+    font-size: 2vw;
+    padding: 2%;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px 1.5%;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.grid1 {
+    grid-area: code1;
+}
+
+.grid2 {
+    grid-area: code2;
+}
+
+.grid3 {
+    grid-area: code3;
+}
+
+.qrGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "code1 code2 code3";
+    column-gap: 2%;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.qrCont {
+}
+
+.qrCont img {
+    border-radius: 30px;
+    width: 100%;
+}
+
+#backMap {
+    position: fixed;
+    top: 75%;
+    z-index: 900;
+    width: 7.5%;
+    margin: 0 .5%;
+}
+
+footer {
+    width: 100%;
+    background: #24ad4b;
+}
+
+footer #social {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    width: 50%;
+    padding: 0 3%;
+}
+
+footer #social .socialLink {
+    display: inline-block;
+    width: 8%;
+    margin: 1.25% .4%;
+    padding: 0;
+}
+
+footer #social .socialLink img {
+    position: relative;
+    width: 90%;
+    margin: 8% 5% 2%;
+}
+
+footer #contact {
+    display: inline-block;
+    float: right;
+    margin: 1% 3% 0;
+    font-family: 'Cutive', serif;
+    font-size: 2.5vw;
+    color: #ffffff;
+}
+
+#mobilePortrait {
+    display: none;
+}
+
+
+
+@media all and (min-width:1376px) and (max-width: 1580px) {
+
+    #contentWrapper iframe {
+        width: 85%;
+        border: 7px solid #fee05f;
+        border-radius: 30px;
+        margin: 2% auto 3%;
+    }
+
+    #contentWrapper .spotify {
+        height: 250px;
+        margin: 2% auto 2%;
+    }
+
+    #contentWrapper .youtube {
+        height: 700px;
+    }
+}
+
+@media all and (min-width:1025px) and (max-width: 1375px) {
+
+    #contentWrapper iframe {
+        width: 85%;
+        border: 7px solid #fee05f;
+        border-radius: 30px;
+        margin: 2% auto 3%;
+    }
+
+    #contentWrapper .spotify {
+        height: 250px;
+        margin: 2% auto 2%;
+    }
+
+    #contentWrapper .youtube {
+        height: 625px;
+    }
+
+    .qrGrid {
+        column-gap: 2%;
+        width: 86.5%;
+    }
+
+    .qrCont img {
+        border-radius: 30px;
+    }
+
+    #backMap {
+        top: 77.5%;
+        width: 9%;
+        margin: 0 .5%;
+    }
+}
+
+@media all and (min-width:960px) and (max-width: 1024px) {
+
+    header #headerImage {
+        background-image: url("Images/Header_Mid.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        width: 100%;
+        padding: 32% 0 0 0;
+    }
+
+    #contentWrapper {
+        border-radius: 45px;
+    }
+
+    #contentWrapper iframe {
+        width: 85%;
+        border: 9px solid #fee05f;
+        border-radius: 30px;
+        margin: 2% auto 4%;
+    }
+
+    #contentWrapper .spotify {
+        height: 220px;
+    }
+
+    #contentWrapper .youtube {
+        height: 475px;
+    }
+
+    .slideshow-container {
+        width: 87%;
+    }
+
+    .slideshow-container img {
+        border: 9px solid #d45521;
+        border-radius: 30px;
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+        font-size: 2.5vw;
+    }
+
+    /* Caption text */
+    .text {
+        font-size: 2.5vw;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+        font-size: 2.5vw;
+    }
+
+    .qrGrid {
+        column-gap: 2%;
+        width: 86.5%;
+    }
+
+    .qrCont img {
+        border-radius: 30px;
+    }
+
+    #backMap {
+        top: 80%;
+        width: 12%;
+        margin: 0 .5%;
+    }
+
+    footer #social {
+        margin: 0;
+        width: 50%;
+        padding: 0 3%;
+    }
+
+    footer #social .socialLink {
+        width: 10%;
+        margin: 1.75% .4%;
+    }
+
+    footer #social .socialLink img {
+        width: 90%;
+    }
+
+    footer #contact {
+        margin: 1.5% 3% 0;
+        font-size: 3.25vw;
+    }
+}
+
+@media all and (min-width:801px) and (max-width: 959px) {
+
+    header #headerImage {
+        background-image: url("Images/Header_Mid.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        width: 100%;
+        padding: 32% 0 0 0;
+    }
+
+    #contentWrapper {
+        border-radius: 40px;
+    }
+
+    #contentWrapper .head h1 {
+        font-size: 6.7vw;
+    }
+
+    #contentWrapper iframe {
+        width: 90%;
+        border: 9px solid #fee05f;
+        border-radius: 30px;
+        margin: 2% auto 4%;
+    }
+
+    #contentWrapper .spotify {
+        height: 220px;
+    }
+
+    #contentWrapper .youtube {
+        height: 450px;
+    }
+
+    article {
+        font-size: 3vw;
+    }
+
+    article .contact {
+        margin: 3% 6%;
+        border-bottom: 5px solid #000000;
+    }
+
+    article .contact h4 {
+        margin: 0;
+        font-size: 2.75vw;
+    }
+
+    article .contact p {
+        margin: 2% 4% 3%;
+        font-size: 2.5vw;
+        line-height: 130%;
+    }
+
+    article .norm {
+        margin: 3% 6%;
+        border-bottom: 5px solid #a77544;
+    }
+
+    .slideshow-container {
+        width: 92%;
+    }
+
+    .slideshow-container img {
+        border: 9px solid #d45521;
+        border-radius: 30px;
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+        font-size: 2.5vw;
+    }
+
+    /* Caption text */
+    .text {
+        font-size: 2.5vw;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+        font-size: 2.5vw;
+    }
+
+    .qrGrid {
+        column-gap: 2%;
+        width: 92%;
+    }
+
+    .qrCont img {
+        border-radius: 30px;
+    }
+
+    #backMap {
+        top: 78%;
+        width: 14%;
+        margin: 0 .5%;
+    }
+
+    footer #social {
+        margin: 0;
+        width: 50%;
+        padding: .5% 4%;
+    }
+
+    footer #social .socialLink {
+        width: 12%;
+        margin: 1.75% .4%;
+    }
+
+    footer #social .socialLink img {
+        width: 90%;
+    }
+
+    footer #contact {
+        margin: 2.4% 4% 0;
+        font-size: 3.25vw;
+    }
+}
+
+@media all and (min-width:650px) and (max-width: 800px) {
+
+
+    #pageBorder {
+        padding: 0;
+        margin: 0;
+        background: none;
+    }
+
+    #page {
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+        position: relative;
+        width: 100%;
+        padding: 0;
+        z-index: 500;
+    }
+
+    header #headerImage {
+        background-image: url("Images/Header_Narrow.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        width: 100%;
+        padding: 37% 0 0 0;
+    }
+
+    header #navArea {
+        position: absolute;
+        width: 100%;
+        padding: 12% 0 0 0;
+        top: 90%;
+        background: linear-gradient(to bottom, #24ad4b 0%, #24ad4b 47%, #000000 47%, #000000 53%, #45caf5 53%, #45caf5 100%);
+    }
+
+    header #navArea nav {
+        display: none;
+    }
+
+    header #navArea #navMobile {
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        height: 100%;
+        width: 20%;
+        margin: 0 auto;
+    }
+
+    header #navArea #navMobile .borderBox {
+        position: relative;
+        display: inline-block;
+        top: 5%;
+        width: 100%;
+        height: 90%;
+    }
+
+    header #navArea #navMobile .borderBox #btnControl {
+        display: none;
+    }
+
+    header #navArea #navMobile .borderBox #burgerButton {
+        position: relative;
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: #ffffff;
+        -moz-transition: background .1s ease-in;
+        -o-transition: background .1s ease-in;
+        -webkit-transition: background .1s ease-in;
+        transition: background .1s ease-in;
+        border-radius: 20%/35%;
+    }
+
+    header #navArea #navMobile .borderBox #btnControl:checked + #burgerButton {
+        background: #ffc70b;
+        z-index: 700;
+    }
+
+    header #navArea #navMobile .borderBox #burgerButton img {
+        position: relative;
+        width: 54%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    header #navArea #navMobile .borderBox #dropDown {
+        position: absolute;
+        width: 500%;
+        height: 275%;
+        top: 50%;
+        left: -200%;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 690;
+    }
+
+    header #navArea #navMobile .borderBox #dropDown svg {
+        position: relative;
+        top: 7%;
+        right: 2%;
+        width: 5%;
+        height: 20%;
+        float: right;
+    }
+
+    header #navArea #navMobile .borderBox #dropDown ul {
+        list-style: none;
+        height: 100%;
+        margin: 2% 0 0;
+    }
+
+    header #navArea #navMobile .borderBox #dropDown ul li {
+        height: 22%;
+        margin: 0;
+    }
+
+    header #navArea #navMobile .borderBox #dropDown ul li a {
+        text-decoration: none;
+        font-family: 'Cutive', serif;
+        font-size: 4vw;
+        color: #ffffff;
+    }
+
+    header #navArea #navMobile .borderBox #btnControl:checked ~ #dropDown {
+        display: block;
+    }
+
+    #content {
+        padding: 0;
+    }
+
+    #contentWrapper {
+        border-radius: 35px;
+    }
+
+    #contentWrapper .head h1 {
+        font-size: 8vw;
+    }
+
+    #contentWrapper iframe {
+        width: 90%;
+        border: 9px solid #fee05f;
+        border-radius: 30px;
+        margin: 2% auto 4%;
+    }
+
+    #contentWrapper .spotify {
+        height: 220px;
+    }
+
+    #contentWrapper .youtube {
+        height: 410px;
+    }
+
+    article {
+        font-size: 3.5vw;
+    }
+
+    article .contact {
+        margin: 3% 4%;
+        border-bottom: 3px solid #000000;
+    }
+
+    article .contact h4 {
+        margin: 1%;
+        font-size: 3.5vw;
+    }
+
+    article .contact p {
+        margin: 2% 4% 3%;
+        font-size: 3.1vw;
+        line-height: 130%;
+    }
+
+    article .norm {
+        margin: 3% 4%;
+        border-bottom: 3px solid #a77544;
+    }
+
+    .slideshow-container {
+        width: 92%;
+    }
+
+    .slideshow-container img {
+        border: 9px solid #d45521;
+        border-radius: 30px;
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+        font-size: 2.75vw;
+    }
+
+    /* Caption text */
+    .text {
+        font-size: 2.75vw;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+        font-size: 2.75vw;
+    }
+
+    .qrGrid {
+        column-gap: 2%;
+        width: 92%;
+    }
+
+    .qrCont img {
+        border-radius: 30px;
+    }
+
+    #backMap {
+        top: 80%;
+        width: 17%;
+        margin: 0 .5%;
+    }
+
+    footer #social {
+        margin: 0;
+        width: 50%;
+        padding: .5% 4%;
+    }
+
+    footer #social .socialLink {
+        width: 12%;
+        margin: 1.75% 1%;
+    }
+
+    footer #social .socialLink img {
+        width: 90%;
+    }
+
+    footer #contact {
+        margin: 2.4% 4% 0;
+        font-size: 3.25vw;
+    }
+}
+
+@media all and (min-width:0px) and (max-width: 649px) and (orientation:portrait) {
+
+    #mapControl {
+        display: none;
+    }
+
+    #mobilePortrait {
+        display: block;
+        position: relative;
+    }
+
+    #mobilePortrait #portraitBorder {
+        display: block;
+        position: relative;
+        width: 70%;
+        padding: 40% 0 0 0;
+        height: 0;
+        background: #5c4109;
+        margin: 10% 0;
+        left: 15%;
+        border-radius: 10%/17%;
+    }
+
+    #mobilePortrait #portraitBorder #portrait {
+        display: block;
+        position: absolute;
+        width: 96%;
+        height: 92%;
+        top: 0%;
+        margin: 2% 2%;
+        background: #ffffff;
+        border-radius: 10%/17%;
+    }
+
+    #mobilePortrait #portraitBorder #portrait p {
+        position: absolute;
+        top: -8%;
+        width: 100%;
+        font-family: 'Cutive', serif;
+        text-align: center;
+        color: #d45521;
+        font-size: 6.5vw;
+        line-height: 150%;
+    }
+
+    svg {
+        position: absolute;
+    }
+
+    #mobilePortrait #portraitBorder #portrait svg {
+        position: relative;
+        top: 2%;
+        right: 2%;
+        width: 7%;
+        height: 20%;
+        float: right;
+    }
+
+    #mapControl:checked + #portraitBorder {
+        display: none;
+    }
+}
+
+@media all and (min-width:0px) and (max-width: 649px){
+
+    .qrGrid {
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "code1" "code2" "code3";
+    }
+}
+
+@media all and (min-width:569px) and (max-width: 649px){
+
+    #pageBorder {
+        padding: 0;
+        margin: 0;
+        background: none;
+    }
+
+    #page {
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+        position: relative;
+        width: 100%;
+        padding: 0;
+        z-index: 500;
+    }
+
+    header #headerImage {
+        background-image: url("Images/Header_Narrow.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        width: 100%;
+        padding: 37% 0 0 0;
+    }
+
+    header #navArea {
+        position: absolute;
+        width: 100%;
+        padding: 12% 0 0 0;
+        top: 90%;
+        background: linear-gradient(to bottom, #24ad4b 0%, #24ad4b 47%, #000000 47%, #000000 53%, #45caf5 53%, #45caf5 100%);
+    }
+
+    header #navArea nav {
+        display: none;
+    }
+
+    header #navArea #navMobile {
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        height: 100%;
+        width: 20%;
+        margin: 0 auto;
+    }
+
+    header #navArea #navMobile .borderBox {
+        position: relative;
+        display: inline-block;
+        top: 5%;
+        width: 100%;
+        height: 90%;
+    }
+
+    header #navArea #navMobile .borderBox #btnControl {
+        display: none;
+    }
+
+    header #navArea #navMobile .borderBox #burgerButton {
+        position: relative;
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: #ffffff;
+        fill: #ec1262;
+        -moz-transition: background .1s ease-in;
+        -o-transition: background .1s ease-in;
+        -webkit-transition: background .1s ease-in;
+        transition: background .1s ease-in;
+        border-radius: 20%/35%;
+    }
+
+    header #navArea #navMobile .borderBox #btnControl:checked + #burgerButton {
+        background: #ffc70b;
+        z-index: 700;
+    }
+
+    header #navArea #navMobile .borderBox #burgerButton img {
+        position: relative;
+        width: 54%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    header #navArea #navMobile .borderBox #dropDown {
+        position: absolute;
+        width: 500%;
+        height: 285%;
+        top: 50%;
+        left: -200%;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 690;
+    }
+
+    header #navArea #navMobile .borderBox #dropDown svg{
+        position: relative;
+        top: 7%;
+        right: 2%;
+        width: 7%;
+        height: 20%;
+        float: right;
+    }
+
+    header #navArea #navMobile .borderBox #dropDown ul {
+        list-style: none;
+        height: 100%;
+        margin: 2% 0 0;
+        padding: 0 0 0 5%;
+    }
+
+    header #navArea #navMobile .borderBox #dropDown ul li {
+        height: 22%;
+        margin: 0;
+    }
+
+    header #navArea #navMobile .borderBox #dropDown ul li a {
+        text-decoration: none;
+        font-family: 'Cutive', serif;
+        font-size: 4.75vw;
+        color: #ffffff;
+    }
+
+    header #navArea #navMobile .borderBox #btnControl:checked ~ #dropDown {
+        display: block;
+    }
+
+    #content {
+        padding: 0;
+    }
+
+    #contentWrapper {
+        border-radius: 30px;
+    }
+
+    #contentWrapper .head h1 {
+        font-size: 8vw;
+    }
+
+    #contentWrapper iframe {
+        width: 90%;
+        border: 9px solid #fee05f;
+        border-radius: 20px;
+        margin: 2% auto 4%;
+    }
+
+    #contentWrapper .spotify {
+        height: 200px;
+    }
+
+    #contentWrapper .youtube {
+        height: 340px;
+    }
+
+    article {
+        font-size: 4vw;
+    }
+
+    article .contact {
+        margin: 4% 4%;
+        border-bottom: 2px solid #000000;
+    }
+
+    article .contact h4 {
+        margin: 1%;
+        font-size: 4.5vw;
+    }
+
+    article .contact p {
+        margin: 2% 4% 3%;
+        font-size: 3.75vw;
+        line-height: 150%;
+    }
+
+    article .norm {
+        margin: 4% 4%;
+        border-bottom: 2px solid #a77544;
+    }
+
+    .slideshow-container {
+        width: 92%;
+    }
+
+    .slideshow-container img {
+        border: 9px solid #d45521;
+        border-radius: 20px;
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+        font-size: 3vw;
+    }
+
+    /* Caption text */
+    .text {
+        font-size: 3vw;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+        font-size: 3vw;
+    }
+
+    .qrGrid {
+        row-gap: .5%;
+        width: 92%;
+        margin: 0 auto 5%;
+    }
+
+    .qrCont img {
+        border-radius: 20px;
+    }
+
+    #backMap {
+        top: 78%;
+        width: 19%;
+        margin: 0 .5%;
+    }
+
+    footer #social {
+        margin: 0;
+        width: 50%;
+        padding: 1% 4%;
+    }
+
+    footer #social .socialLink {
+        width: 19%;
+        margin: 1.75% 1.5%;
+    }
+
+    footer #social .socialLink img {
+        width: 90%;
+    }
+
+    footer #contact {
+        margin: 2.9% 4% 0;
+        font-size: 6vw;
+    }
+}
+
+@media all and (min-width:481px) and (max-width: 568px) {
+
+    #pageBorder {
+        padding: 0;
+        margin: 0;
+        background: none;
+    }
+
+    #page {
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+        position: relative;
+        width: 100%;
+        padding: 0;
+        z-index: 500;
+    }
+
+    header #headerImage {
+        background-image: url("Images/Header_Narrow.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        width: 100%;
+        padding: 37% 0 0 0;
+    }
+
+    header #navArea {
+        position: absolute;
+        width: 100%;
+        padding: 12% 0 0 0;
+        top: 90%;
+        background: linear-gradient(to bottom, #24ad4b 0%, #24ad4b 47%, #000000 47%, #000000 53%, #45caf5 53%, #45caf5 100%);
+    }
+
+    header #navArea nav {
+        display: none;
+    }
+
+    header #navArea #navMobile {
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        height: 100%;
+        width: 20%;
+        margin: 0 auto;
+    }
+
+    header #navArea #navMobile .borderBox {
+        position: relative;
+        display: inline-block;
+        top: 5%;
+        width: 100%;
+        height: 90%;
+    }
+
+    header #navArea #navMobile .borderBox #btnControl {
+        display: none;
+    }
+
+    header #navArea #navMobile .borderBox #burgerButton {
+        position: relative;
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: #ffffff;
+        fill: #ec1262;
+        -moz-transition: background .1s ease-in;
+        -o-transition: background .1s ease-in;
+        -webkit-transition: background .1s ease-in;
+        transition: background .1s ease-in;
+        border-radius: 20%/35%;
+    }
+
+    header #navArea #navMobile .borderBox #btnControl:checked + #burgerButton {
+        background: #ffc70b;
+        z-index: 700;
+    }
+
+    header #navArea #navMobile .borderBox #burgerButton img {
+        position: relative;
+        width: 54%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    header #navArea #navMobile .borderBox #dropDown {
+        position: absolute;
+        width: 500%;
+        height: 350%;
+        top: 50%;
+        left: -200%;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 690;
+    }
+
+    header #navArea #navMobile .borderBox #dropDown svg{
+        position: relative;
+        top: 7%;
+        right: 2%;
+        width: 8%;
+        height: 20%;
+        float: right;
+    }
+
+    header #navArea #navMobile .borderBox #dropDown ul {
+        list-style: none;
+        height: 100%;
+        margin: 2% 0 0;
+        padding: 0 0 0 5%;
+    }
+
+    header #navArea #navMobile .borderBox #dropDown ul li {
+        height: 23.5%;
+        margin: 0;
+    }
+
+    header #navArea #navMobile .borderBox #dropDown ul li a {
+        text-decoration: none;
+        font-family: 'Cutive', serif;
+        font-size: 5.75vw;
+        color: #ffffff;
+    }
+
+    header #navArea #navMobile .borderBox #btnControl:checked ~ #dropDown {
+        display: block;
+    }
+
+    #content {
+        padding: 0;
+    }
+
+    #contentWrapper {
+        border-radius: 30px;
+    }
+
+    #contentWrapper .head h1 {
+        font-size: 9vw;
+    }
+
+    #contentWrapper iframe {
+        width: 90%;
+        border: 7px solid #fee05f;
+        border-radius: 15px;
+        margin: 2% auto 4%;
+    }
+
+    #contentWrapper .spotify {
+        height: 200px;
+    }
+
+    #contentWrapper .youtube {
+        height: 280px;
+    }
+
+    article {
+        font-size: 4.25vw;
+    }
+
+    article .contact {
+        margin: 4% 3%;
+        border-bottom: 2px solid #000000;
+    }
+
+    article .contact h4 {
+        margin: 1%;
+        font-size: 5.5vw;
+    }
+
+    article .contact p {
+        margin: 2% 4% 4%;
+        font-size: 4.5vw;
+        line-height: 150%;
+    }
+
+    article .norm {
+        margin: 4% 3%;
+        border-bottom: 2px solid #a77544;
+    }
+
+    .slideshow-container {
+        width: 92%;
+    }
+
+    .slideshow-container img {
+        border: 7px solid #d45521;
+        border-radius: 15px;
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+        font-size: 3.5vw;
+    }
+
+    /* Caption text */
+    .text {
+        font-size: 3.25vw;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+        font-size: 3.25vw;
+        padding: 3%;
+    }
+
+    .qrGrid {
+        row-gap: .5%;
+        width: 92%;
+        margin: 0 auto 5%;
+    }
+
+    .qrCont img {
+        border-radius: 15px;
+    }
+
+    #backMap {
+        top: 79%;
+        width: 22%;
+        margin: 0 .5%;
+    }
+
+    footer #social {
+        margin: 0;
+        width: 50%;
+        padding: 1% 4%;
+    }
+
+    footer #social .socialLink {
+        width: 19%;
+        margin: 1.75% 1.5%;
+    }
+
+    footer #social .socialLink img {
+        width: 90%;
+    }
+
+    footer #contact {
+        margin: 3% 5% 0;
+        font-size: 6vw;
+    }
+}
+
+@media all and (min-width:375px) and (max-width: 480px) {
+
+    #pageBorder {
+        padding: 0;
+        margin: 0;
+        background: none;
+    }
+
+    #page {
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+        position: relative;
+        width: 100%;
+        padding: 0;
+        z-index: 500;
+    }
+
+    header #headerImage {
+        background-image: url("Images/Header_Narrow.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        width: 100%;
+        padding: 37% 0 0 0;
+    }
+
+    header #navArea {
+        position: absolute;
+        width: 100%;
+        padding: 12% 0 0 0;
+        top: 90%;
+        background: linear-gradient(to bottom, #24ad4b 0%, #24ad4b 47%, #000000 47%, #000000 53%, #45caf5 53%, #45caf5 100%);
+    }
+
+    header #navArea nav {
+        display: none;
+    }
+
+    header #navArea #navMobile {
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        height: 100%;
+        width: 20%;
+        margin: 0 auto;
+    }
+
+    header #navArea #navMobile .borderBox {
+        position: relative;
+        display: inline-block;
+        top: 5%;
+        width: 100%;
+        height: 90%;
+    }
+
+    header #navArea #navMobile .borderBox #btnControl {
+        display: none;
+    }
+
+    header #navArea #navMobile .borderBox #burgerButton {
+        position: relative;
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: #ffffff;
+        fill: #ec1262;
+        -moz-transition: background .1s ease-in;
+        -o-transition: background .1s ease-in;
+        -webkit-transition: background .1s ease-in;
+        transition: background .1s ease-in;
+        border-radius: 20%/35%;
+    }
+
+    header #navArea #navMobile .borderBox #btnControl:checked + #burgerButton {
+        background: #ffc70b;
+        z-index: 700;
+    }
+
+    header #navArea #navMobile .borderBox #burgerButton img {
+        position: relative;
+        width: 54%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    header #navArea #navMobile .borderBox #dropDown {
+        position: absolute;
+        width: 500%;
+        height: 420%;
+        top: 50%;
+        left: -200%;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 690;
+    }
+
+    header #navArea #navMobile .borderBox #dropDown svg{
+        position: relative;
+        top: 5%;
+        right: 2%;
+        width: 8%;
+        height: 20%;
+        float: right;
+    }
+
+    header #navArea #navMobile .borderBox #dropDown ul {
+        list-style: none;
+        height: 100%;
+        margin: 2% 0 0;
+        padding: 0 0 0 5%;
+    }
+
+    header #navArea #navMobile .borderBox #dropDown ul li {
+        height: 23.5%;
+        margin: 0;
+    }
+
+    header #navArea #navMobile .borderBox #dropDown ul li a {
+        text-decoration: none;
+        font-family: 'Cutive', serif;
+        font-size: 7vw;
+        color: #ffffff;
+    }
+
+    header #navArea #navMobile .borderBox #btnControl:checked ~ #dropDown {
+        display: block;
+    }
+
+    #content {
+        padding: 0;
+    }
+
+    #contentWrapper {
+        border-radius: 20px;
+    }
+
+    #contentWrapper .head h1 {
+        font-size: 10vw;
+    }
+
+    #contentWrapper iframe {
+        width: 90%;
+        border: 6px solid #fee05f;
+        border-radius: 15px;
+        margin: 2% auto 4%;
+    }
+
+    #contentWrapper .spotify {
+        height: 180px;
+    }
+
+    #contentWrapper .youtube {
+        height: 240px;
+    }
+
+    article {
+        font-size: 5vw;
+    }
+
+    article .contact {
+        margin: 4% 3%;
+        border-bottom: 2px solid #000000;
+    }
+
+    article .contact h4 {
+        margin: 3% 1%;
+        font-size: 6vw;
+    }
+
+    article .contact p {
+        margin: 2% 4% 4%;
+        font-size: 5.25vw;
+        line-height: 150%;
+    }
+
+    article .norm {
+        margin: 4% 3%;
+        border-bottom: 2px solid #a77544;
+    }
+
+    .slideshow-container {
+        width: 92%;
+    }
+
+    .slideshow-container img {
+        border: 6px solid #d45521;
+        border-radius: 15px;
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+        font-size: 4.25vw;
+    }
+
+    /* Caption text */
+    .text {
+        font-size: 4vw;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+        font-size: 4vw;
+        padding: 3%;
+    }
+
+    .qrGrid {
+        row-gap: .5%;
+        width: 92%;
+        margin: 0 auto 5%;
+    }
+
+    .qrCont img {
+        border-radius: 15px;
+    }
+
+    #backMap {
+        top: auto;
+        bottom: 20%;
+        width: 25%;
+        margin: 0 .5%;
+    }
+
+    footer #social {
+        margin: 0;
+        width: 50%;
+        padding: 1% 4%;
+    }
+
+    footer #social .socialLink {
+        width: 19%;
+        margin: 1.75% 2.5%;
+    }
+
+    footer #social .socialLink img {
+        width: 90%;
+    }
+
+    footer #contact {
+        margin: 3% 5% 0;
+        font-size: 6vw;
+    }
+}
+
+@media all and (min-width:0px) and (max-width: 374px) {
+
+    #pageBorder {
+        padding: 0;
+        margin: 0;
+        background: none;
+    }
+
+    #page {
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+        position: relative;
+        width: 100%;
+        padding: 0;
+        z-index: 500;
+    }
+
+    header #headerImage {
+        background-image: url("Images/Header_Narrow.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        width: 100%;
+        padding: 37% 0 0 0;
+    }
+
+    header #navArea {
+        position: absolute;
+        width: 100%;
+        padding: 12% 0 0 0;
+        top: 90%;
+        background: linear-gradient(to bottom, #24ad4b 0%, #24ad4b 47%, #000000 47%, #000000 53%, #45caf5 53%, #45caf5 100%);
+    }
+
+    header #navArea nav {
+        display: none;
+    }
+
+    header #navArea #navMobile {
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        height: 100%;
+        width: 20%;
+        margin: 0 auto;
+    }
+
+    header #navArea #navMobile .borderBox {
+        position: relative;
+        display: inline-block;
+        top: 5%;
+        width: 100%;
+        height: 90%;
+    }
+
+    header #navArea #navMobile .borderBox #btnControl {
+        display: none;
+    }
+
+    header #navArea #navMobile .borderBox #burgerButton {
+        position: relative;
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: #ffffff;
+        fill: #ec1262;
+        -moz-transition: background .1s ease-in;
+        -o-transition: background .1s ease-in;
+        -webkit-transition: background .1s ease-in;
+        transition: background .1s ease-in;
+        border-radius: 20%/35%;
+    }
+
+    header #navArea #navMobile .borderBox #btnControl:checked + #burgerButton {
+        background: #ffc70b;
+        z-index: 700;
+    }
+
+    header #navArea #navMobile .borderBox #burgerButton img {
+        position: relative;
+        width: 54%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    header #navArea #navMobile .borderBox #dropDown {
+        position: absolute;
+        width: 500%;
+        height: 440%;
+        top: 50%;
+        left: -200%;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 690;
+    }
+
+    header #navArea #navMobile .borderBox #dropDown svg{
+        position: relative;
+        top: 5%;
+        right: 2%;
+        width: 10%;
+        height: 20%;
+        float: right;
+    }
+
+    header #navArea #navMobile .borderBox #dropDown ul {
+        list-style: none;
+        height: 100%;
+        margin: 2% 0 0;
+        padding: 0 0 0 5%;
+    }
+
+    header #navArea #navMobile .borderBox #dropDown ul li {
+        height: 23.5%;
+        margin: 0;
+    }
+
+    header #navArea #navMobile .borderBox #dropDown ul li a {
+        text-decoration: none;
+        font-family: 'Cutive', serif;
+        font-size: 7vw;
+        color: #ffffff;
+    }
+
+    header #navArea #navMobile .borderBox #btnControl:checked ~ #dropDown {
+        display: block;
+    }
+
+    #content {
+        padding: 0;
+    }
+
+    #contentWrapper {
+        border-radius: 20px;
+    }
+
+    #contentWrapper .head h1 {
+        font-size: 10vw;
+    }
+
+    #contentWrapper iframe {
+        width: 90%;
+        border: 4px solid #fee05f;
+        border-radius: 10px;
+        margin: 2% auto 4%;
+    }
+
+    #contentWrapper .spotify {
+        height: 180px;
+    }
+
+    #contentWrapper .youtube {
+        height: 200px;
+    }
+
+    article {
+        font-size: 5.25vw;
+    }
+
+    article .contact {
+        margin: 4% 3%;
+        border-bottom: 2px solid #000000;
+    }
+
+    article .contact h4 {
+        margin: 3% 1%;
+        font-size: 6.25vw;
+    }
+
+    article .contact p {
+        margin: 2% 4% 4%;
+        font-size: 5.5vw;
+        line-height: 150%;
+    }
+
+    article .norm {
+        margin: 4% 3%;
+        border-bottom: 2px solid #a77544;
+    }
+
+    .slideshow-container {
+        width: 92%;
+    }
+
+    .slideshow-container img {
+        border: 4px solid #d45521;
+        border-radius: 10px;
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+        font-size: 4.75vw;
+    }
+
+    /* Caption text */
+    .text {
+        font-size: 4.5vw;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+        font-size: 4.5vw;
+        padding: 4%;
+    }
+
+    .qrGrid {
+        row-gap: .3%;
+        width: 92%;
+        margin: 0 auto 2.5%;
+    }
+
+    .qrCont img {
+        border-radius: 10px;
+    }
+
+    #backMap {
+        top: auto;
+        bottom: 20%;
+        width: 30%;
+        margin: 0 .5%;
+    }
+
+    footer #social {
+        margin: 0;
+        width: 50%;
+        padding: 1% 4%;
+    }
+
+    footer #social .socialLink {
+        width: 19%;
+        margin: 1.75% 2.5%;
+    }
+
+    footer #social .socialLink img {
+        width: 90%;
+    }
+
+    footer #contact {
+        margin: 3% 5% 0;
+        font-size: 6vw;
+    }
+}
+
+@media all and (min-width:0px) and (max-width: 959px) and (orientation:landscape) {
+
+    #backMap {
+        top: 60%;
+    }
+}
